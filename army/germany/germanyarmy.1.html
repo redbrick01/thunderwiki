@@ -503,8 +503,88 @@ hr {
   padding-bottom: 5px;
 }
 
+#gamemode1 {
+  margin: auto;
+}
+#gamemode1 .ab {
+  width:20%;
+  height: 50px;
+  font-size: 20pt;
+  border: 0px;
+  color:#233238;
+  background-color: rgba(255, 255, 255, 0.904);
+}
+#gamemode1 .ab:hover {
+  width:20%;
+  height: 50px;
+  font-size: 20pt;
+  border: 0px;
+  color:white;
+  background-color: #233238;
+}
+#gamemode1 .ab:visited {
+  width:20%;
+  height: 50px;
+  font-size: 20pt;
+  border: 0px;
+  color:white;
+  background-color:#233238;
+}
+#gamemode1 .rb {
+  width:20%;
+  height: 50px;
+  font-size: 20pt;
+  border: 0px;
+  color:#233238;
+  background-color: rgba(255, 255, 255, 0.904);
+}
+#gamemode1 .rb:hover {
+  width:20%;
+  height: 50px;
+  font-size: 20pt;
+  border: 0px;
+  color:white;
+  background-color:#233238;
+}
+#gamemode1 .rb:active {
+  width:20%;
+  height: 50px;
+  font-size: 20pt;
+  border: 0px;
+  color:white;
+  background-color:#233238;
+}
+#gamemode1 .sb {
+  width:20%;
+  height: 50px;
+  font-size: 20pt;
+  border: 0px;
+  color:#233238;
+  background-color: rgba(255, 255, 255, 0.904);
+}
+#gamemode1 .sb:hover {
+  width:20%;
+  height: 50px;
+  font-size: 20pt;
+  border: 0px;
+  color:white;
+  background-color: #233238;
+}
+#gamemode1 .sb:active {
+  width:20%;
+  height: 50px;
+  font-size: 20pt;
+  border: 0px;
+  color:white;
+  background-color:#233238;
+  outline:none;
+}
+button {
+  outline-style:none;
+}
 
     </style>
+
   </head>
   <body>
     <header>
@@ -533,61 +613,122 @@ hr {
       <a href="francearmy.html"><img id="groundnav" src="../armynav/francearmy.jpg"></a>
   </div>
  <br>
- <br>
+ <br><br><br>
  <h2>------- German Tree -------</h2><br><br>
+ <center><div id="gamemode1">
+    <button class="ab" onclick="
+       document.getElementById('logopz4e').innerHTML = 'Pz.lV E<br>2.3';
+       document.getElementById('logopz3l').innerHTML = 'Pz.lll L<br>3.0';
+       document.getElementById('logopz3m').innerHTML = 'Pz.lll M<br>3.0';
+       document.getElementById('logopz4f2').innerHTML = 'Pz.lV F2<br>3.7';
+       document.getElementById('logo88').innerHTML = '8,8cm Flak<br>4.3';
+       document.getElementById('logostug3g').innerHTML = 'StuG lll G<br>4.3';
+       document.getElementById('logo15cm pz.w.42').innerHTML = '4.0';
+   
+       document.getElementById('logodm').innerHTML = 'Dicker Max<br>4.7';
+       document.getElementById('logopz4g').innerHTML = 'Pz.lV G<br>4.3';
+       document.getElementById('logopz4h').innerHTML = 'Pz.lV H<br>4.3';
+       document.getElementById('logopz4j').innerHTML = 'Pz.lV J<br>4.7';
+       document.getElementById('logopz4hj').innerHTML = 'Pz.lV H / J<br>4.3 - 4.7';
+       document.getElementById('logopz.bfw.4').innerHTML = '4.3';
+       document.getElementById('logokv2').innerHTML = '5.0';
+       document.getElementById('logop2').innerHTML = 'Pather ll<br>7.0';
+       document.getElementById('logoferd').innerHTML = 'Ferdinand<br>7.0';
+       document.getElementById('logoleo').innerHTML = 'Leopard l<br>7.3';
+       document.getElementById('logom47').innerHTML = 'mKPz M47 G<br>Pack &nbsp; 7.7';
+    ">AB</button>
+    <button class="rb" onclick=" 
+       document.getElementById('logopz4e').innerHTML = 'Pz.lV E<br>2.0';
+       document.getElementById('logopz3l').innerHTML = 'Pz.lll L<br>3.0';
+       document.getElementById('logopz3m').innerHTML = 'Pz.lll M<br>3.0';
+       document.getElementById('logopz4f2').innerHTML = 'Pz.lV F2<br>3.3';
+       document.getElementById('logo88').innerHTML = '8,8cm Flak<br>4.0';
+       document.getElementById('logostug3g').innerHTML = 'StuG lll G<br>4.0';
+       document.getElementById('logo15cm pz.w.42').innerHTML = '3.7';
+   
+       document.getElementById('logodm').innerHTML = 'Dicker Max<br>4.3';
+       document.getElementById('logopz4g').innerHTML = 'Pz.lV G<br>4.0';
+       document.getElementById('logopz4h').innerHTML = 'Pz.lV H<br>4.0';
+       document.getElementById('logopz4j').innerHTML = 'Pz.lV J<br>4.3';
+       document.getElementById('logopz4hj').innerHTML = 'Pz.lV H / J<br>4.0 - 4.3';
+       document.getElementById('logopz.bfw.4').innerHTML = '4.0';
+       document.getElementById('logokv2').innerHTML = '4.3';
+       document.getElementById('logop2').innerHTML = 'Pather ll<br>6.7';
+       document.getElementById('logoferd').innerHTML = 'Ferdinand<br>6.3';
+       document.getElementById('logoleo').innerHTML = 'Leopard l<br>7.7';
+       document.getElementById('logom47').innerHTML = 'mKPz M47 G<br>Pack &nbsp; 7.3';
+    ">RB</button>
+    <button class="sb" onclick="
+       document.getElementById('logopz3m').innerHTML = 'Pz.lll M<br>3.0';
+       document.getElementById('logopz3l').innerHTML = 'Pz.lll L<br>3.0';
+       document.getElementById('logo88').innerHTML = '8,8cm Flak<br>3.7';
+       document.getElementById('logo15cm pz.w.42').innerHTML = '4.3';
+   
+       document.getElementById('logotiger2p').innerHTML = 'Tiger ll (P)<br>6.7';
+       document.getElementById('logopf').innerHTML = 'Panther F<br>6.7';
+       document.getElementById('logop2').innerHTML = 'Panther ll<br>6.7';
+       document.getElementById('logojp').innerHTML = 'Jagdpanther<br>6.7';
+       document.getElementById('logoferd').innerHTML = 'Ferdinand<br>6.7';
+       document.getElementById('logobfwjp').innerHTML = '6.7';
+       document.getElementById('logoleo').innerHTML = 'Leopard l<br>7.3';
+       document.getElementById('logom47').innerHTML = 'mKPz M47 G<br>Pack &nbsp; 7.7';
+       document.getElementById('logotiger2105').innerHTML = 'Tiger ll (10.5cm)</div><br>6.7';
+    ">SB</button>
+    </div></center>
+    <br><br>
  <hr>
  <br><br>
 
  <table id="tree">
    <tr>
      <td rowspan="3" class="tier">l</td>
-     <td><button onclick= " location.href = '#Sd.Kfz.221' " class="tank">Sd.Kfz.221<br>1.3</button></td>
-     <td><button onclick= " location.href = '#pz3b' " class="tank">Pz.lll B<br>Reserve</button></td>
+     <td><button id="logoSd.Kfz.221" onclick= " location.href = '#Sd.Kfz.221' " class="tank">Sd.Kfz.221<br>1.3</button></td>
+     <td><button id="logopz3b" onclick= " location.href = '#pz3b' " class="tank">Pz.lll B<br>Reserve</button></td>
      <td>
         <div id="show">
-          <button onclick= " location.href = '#' " class="tank">Pz.ll C / F<br>1.0 - 1.3</button>
+          <button id="logo" onclick= " location.href = '#' " class="tank">Pz.ll C / F<br>1.0 - 1.3</button>
         <div id="hide">
-          <button onclick= " location.href = '#pz2c' " class="tank">Pz.ll C<br>1.0</button><br><br>
-          <button onclick= " location.href = '#pz2f' " class="tank">Pz.ll F<br>1.3</button>
+          <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">Pz.ll C<br>1.0</button><br><br>
+          <button id="logopz2f" onclick= " location.href = '#pz2f' " class="tank">Pz.ll F<br>1.3</button>
         </div>
         </div>
      </td>
-     <td><button onclick= " location.href = '#aa1' " class="tank">Flakpanzer l<br>1.3</button></td>
-     <td><button onclick= " location.href = '#35t' " class="tank">Pz 35(t)<br>Reserve</button></td>
-     <td><button onclick= " location.href = '#pz2cdak' " class="tank2">Pz.ll C (dak)<br>250 <img id="goldicon1" src="../../image/gold.svg"> &nbsp; 4.3</button></td>
-     <td><button onclick= " location.href = '#sd.kfz.140/1' " class="tank2">Sd.Kfz.140/1<br>Pack &nbsp; 1.3</button></td>
+     <td><button id="logoaa1" onclick= " location.href = '#aa1' " class="tank">Flakpanzer l<br>1.3</button></td>
+     <td><button id="logo35t" onclick= " location.href = '#35t' " class="tank">Pz 35(t)<br>Reserve</button></td>
+     <td><button id="logopz2cdak" onclick= " location.href = '#pz2cdak' " class="tank2">Pz.ll C (dak)<br>250 <img id="goldicon1" src="../../image/gold.svg"> &nbsp; 1.3</button></td>
+     <td><button id="logosd.kfz.140/1" onclick= " location.href = '#sd.kfz.140/1' " class="tank2">Sd.Kfz.140/1<br>Pack &nbsp; 1.3</button></td>
    </tr>
    <tr>
-     <td><button onclick= " location.href = '#panzerjager1' " class="tank">Panzerjager l<br>1.7</button></td>
-     <td><button onclick= " location.href = '#pz3e' " class="tank">Pz.lll E<br>1.7</button></td>
-     <td><button onclick= " location.href = '#pz4c' " class="tank">Pz.lV C<br>1.3</button></td>
-     <td><button onclick= " location.href = '#aa38' " class="tank">Flakpanzer 38<br>2.0</button></td>
+     <td><button id="logopanzerjager1" onclick= " location.href = '#panzerjager1' " class="tank">Panzerjager l<br>1.7</button></td>
+     <td><button id="logopz3e" onclick= " location.href = '#pz3e' " class="tank">Pz.lll E<br>1.7</button></td>
+     <td><button id="logopz4c" onclick= " location.href = '#pz4c' " class="tank">Pz.lV C<br>1.3</button></td>
+     <td><button id="logoaa38" onclick= " location.href = '#aa38' " class="tank">Flakpanzer 38<br>2.0</button></td>
      <td>
        <div id="show">
-         <button onclick= " location.href = '#' " class="tank">Pz 38(t) A / F<br>1.3 - 2.0</button>
+         <button id="logo" onclick= " location.href = '#' " class="tank">Pz 38(t) A / F<br>1.3 - 2.0</button>
        <div id="hide">
-         <button onclick= " location.href = '#38ta' " class="tank">Pz 38(t) A<br>1.3</button><br><br>
-         <button onclick= " location.href = '#38tf' " class="tank">Pz 38(t) F<br>2.0</button>
+         <button id="logo38ta" onclick= " location.href = '#38ta' " class="tank">Pz 38(t) A<br>1.3</button><br><br>
+         <button id="logo38tf" onclick= " location.href = '#38tf' " class="tank">Pz 38(t) F<br>2.0</button>
        </div>
        </div>
      </td>
-     <td><button onclick= " location.href = '#' " class="tank2">Sd.Kfz.234/3<br>&nbsp; 1.7</button></td>
-     <td><button onclick= " location.href = '#Nb.Fz' " class="tank2">Nb.Fz.<br>1,750 <img id="goldicon1" src="../../image/gold.svg">&nbsp; 1.3</button></td>
+     <td><button id="logo" onclick= " location.href = '#' " class="tank2">Sd.Kfz.234/3<br>&nbsp; 1.7</button></td>
+     <td><button id="logoNb.Fz" onclick= " location.href = '#Nb.Fz' " class="tank2">Nb.Fz.<br>1,750 <img id="goldicon1" src="../../image/gold.svg">&nbsp; 1.3</button></td>
    </tr>
    <tr>
-     <td><button onclick= " location.href = '#sturmpanzer2' " class="tank">Srumpanzer ll<br>2.0</button></td>
+     <td><button id="logosturmpanzer2" onclick= " location.href = '#sturmpanzer2' " class="tank">Srumpanzer ll<br>2.0</button></td>
      <td>
         <div id="show">
-            <button onclick= " location.href = '#' " class="tank">Pz lll F / J<br>2.0 - 2.3</button>
+            <button id="logo" onclick= " location.href = '#' " class="tank">Pz lll F / J<br>2.0 - 2.3</button>
           <div id="hide">
-            <button onclick= " location.href = '#pz3f' " class="tank">Pz lll F<br>2.0</button><br><br>
-            <button onclick= " location.href = '#pz3j' " class="tank">Pz lll J<br>2.3</button>
+            <button id="logopz3f" onclick= " location.href = '#pz3f' " class="tank">Pz lll F<br>2.0</button><br><br>
+            <button id="logopz3j" onclick= " location.href = '#pz3j' " class="tank">Pz lll J<br>2.3</button>
           </div>
           </div>
      </td>
-     <td><button onclick= " location.href = '#pz4e' " class="tank">Pz.lV E<br>2.0</button></td>
+     <td><button id="logopz4e" onclick= " location.href = '#pz4e' " class="tank">Pz.lV E<br>2.0</button></td>
      <td></td>
-     <td><button onclick= " location.href = '#stug3a' " class="tank">Stug lll A<br>2.3</button></td>
+     <td><button id="logostug3a" onclick= " location.href = '#stug3a' " class="tank">Stug lll A<br>2.3</button></td>
      <td></td>
      <td></td>
    </tr>
@@ -596,87 +737,78 @@ hr {
 <br><table id="tree">
   <tr>
     <td rowspan="3" class="tier">ll</td>
-    <td><button onclick= " location.href = '#Sd.Kfz.234/2' " class="tank">Sd.Kfz.234/2<br>2.7</button></td>
-    <td><button onclick= " location.href = '#pz3j1' " class="tank">Pz.lll J1<br>3.0</button></td>
-    <td><button onclick= " location.href = '#pz4f1' " class="tank">Pz.lV F1<br>2.3</button></td>
-    <td><button onclick= " location.href = '#aa3' " class="tank">Sd.Kfz.6/2<br>3.0</button></td>
-    <td><button onclick= " location.href = '#stuh' " class="tank">StuH 42 G<br>3.0</button></td>
-    <td><button onclick= " location.href = '#pz3n' " class="tank2">Sd.Kfz.234/4<br>&nbsp; 3.0</button></td>
-    <td><button onclick= " location.href = '#pz2h' " class="tank2">Pz.ll H<br>Pack&nbsp; 2.3</button></td>
+    <td><button id="logoSd.Kfz.234/2" onclick= " location.href = '#Sd.Kfz.234/2' " class="tank">Sd.Kfz.234/2<br>2.7</button></td>
+    <td><button id="logopz3j1" onclick= " location.href = '#pz3j1' " class="tank">Pz.lll J1<br>3.0</button></td>
+    <td><button id="logopz4f1" onclick= " location.href = '#pz4f1' " class="tank">Pz.lV F1<br>2.3</button></td>
+    <td><button id="logoaa3" onclick= " location.href = '#aa3' " class="tank">Sd.Kfz.6/2<br>3.0</button></td>
+    <td><button id="logostuh" onclick= " location.href = '#stuh' " class="tank">StuH 42 G<br>3.0</button></td>
+    <td><button id="logopz3n" onclick= " location.href = '#pz3n' " class="tank2">Sd.Kfz.234/4<br>&nbsp; 3.0</button></td>
+    <td><button id="logopz2h" onclick= " location.href = '#pz2h' " class="tank2">Pz.ll H<br>Pack&nbsp; 2.3</button></td>
   </tr>
   <tr>
     <td>
       <div id="show">
-        <button onclick= " location.href = '#' " class="tank">Marder lll / lll H<br>2.7 - 3.0</button>
+        <button id="logo" onclick= " location.href = '#' " class="tank">Marder lll / lll H<br>2.7 - 3.0</button>
       <div id="hide">
-        <button onclick= " location.href = '#marder3' " class="tank">Marder lll<br>2.7</button><br><br>
-        <button onclick= " location.href = '#marder3h' " class="tank">Marder lll H<br>3.0</button>
+        <button id="logomarder3" onclick= " location.href = '#marder3' " class="tank">Marder lll<br>2.7</button><br><br>
+        <button id="logomarder3h" onclick= " location.href = '#marder3h' " class="tank">Marder lll H<br>3.0</button>
       </div>
       </div>
     </td>
-    <td><button onclick= " location.href = '#pz3l' " class="tank">Pz.lll L<br>3.3</button></td>
-    <td><button onclick= " location.href = '#pz4f2' " class="tank">Pz.lV F2<br>3.3</button></td>
+    <td><button id="logopz3l" onclick= " location.href = '#pz3l' " class="tank">Pz.lll L<br>3.0</button></td>
+    <td><button id="logopz4f2" onclick= " location.href = '#pz4f2' " class="tank">Pz.lV F2<br>3.3</button></td>
     <td></td>
-    <td><button onclick= " location.href = '#stug3f' " class="tank">StuG lll F<br>3.7</button></td>
-    <td><button onclick= " location.href = '#pz3n' " class="tank2">Pz.lll N<br>1,000 <img id="goldicon1" src="../../image/gold.svg">&nbsp; 3.0</button></td>
-    <td><button onclick= " location.href = '#pz2h' " class="tank2">M4 748 (a)<br>&nbsp; 3.7</button></td>
+    <td><button id="logostug3f" onclick= " location.href = '#stug3f' " class="tank">StuG lll F<br>3.7</button></td>
+    <td><button id="logopz3n" onclick= " location.href = '#pz3n' " class="tank2">Pz.lll N<br>1,000 <img id="goldicon1" src="../../image/gold.svg">&nbsp; 3.0</button></td>
+    <td><button id="logopz2h" onclick= " location.href = '#pz2h' " class="tank2">M4 748 (a)<br>&nbsp; 3.7</button></td>
   </tr>
   <tr>
-    <td><button onclick= " location.href = '#88' " class="tank">8,8cm Flak<br>4.0</button></td>
-    <td><button onclick= " location.href = '#pz3m' " class="tank">Pz.lll M<br>3.3</button></td>
+    <td><button id="logo88" onclick= " location.href = '#88' " class="tank">8,8cm Flak<br>4.0</button></td>
+    <td><button id="logopz3m" onclick= " location.href = '#pz3m' " class="tank">Pz.lll M<br>3.0</button></td>
     <td></td>
     <td></td>
-    <td><button onclick= " location.href = '#stug3g' " class="tank">StuG lll G<br>4.0</button></td>
-    <td><button onclick= " location.href = '#t-34-747(r)' " class="tank2">T-34-747(r)<br>2,460 <img id="goldicon1" src="../../image/gold.svg">&nbsp; 4.0</button></td>
-    <td><button onclick= " location.href = '#15cm pz.w.42' " class="tank2">15cm Pz.W.42<br>4,800 <img id="goldicon1" src="../../image/gold.svg">&nbsp; 3.7</button></td>
+    <td><button id="logostug3g" onclick= " location.href = '#stug3g' " class="tank">StuG lll G<br>4.0</button></td>
+    <td><button id="logot-34-747(r)" onclick= " location.href = '#t-34-747(r)' " class="tank2">T-34-747(r)<br>2,460 <img id="goldicon1" src="../../image/gold.svg">&nbsp; 4.0</button></td>
+    <td><button onclick= " location.href = '#15cm pz.w.42' " class="tank2">15cm Pz.W.42<br>4,800 <img id="goldicon1" src="../../image/gold.svg">&nbsp; <span id="logo15cm pz.w.42">3.7</span></button></td>
   </tr>
 </table><br>
 <hr>
 <br><table id="tree">
   <tr>
     <td rowspan="5" class="tier">lll</td>
-    <td><button onclick= " location.href = '#dm' " class="tank">Dicker Max<br>4.3</button></td>
-    <td><button onclick= " location.href = '#tigerh1' " class="tank">Tiger H1<br>5.7</button></td>
-    <td><button onclick= " location.href = '#pz4g' " class="tank">Pz.lV G<br>4.0</button></td>
-    <td><button onclick= " location.href = '#wirbe' " class="tank">Wirbelwind<br>3.7</button></td>
-    <td><button onclick= " location.href = '#jp38' " class="tank"><div style="font-size:8pt;">Jagdpanzer 38(t)</div>4.7</button></td>
-    <td><button onclick= " location.href = '#pz.bfw.4' " class="tank2">Pz.Bfw.lV<br>1,750 <img id="goldicon1" src="../../image/gold.svg">&nbsp; 4.0</button></td>
-    <td><button onclick= " location.href = '#' " class="tank2">KV-lB<br> &nbsp; 4.0</button></td>
+    <td><button id="logodm" onclick= " location.href = '#dm' " class="tank">Dicker Max<br>4.3</button></td>
+    <td><button id="logotigerh1" onclick= " location.href = '#tigerh1' " class="tank">Tiger H1<br>5.7</button></td>
+    <td><button id="logopz4g" onclick= " location.href = '#pz4g' " class="tank">Pz.lV G<br>4.0</button></td>
+    <td><button id="logowirbe" onclick= " location.href = '#wirbe' " class="tank">Wirbelwind<br>3.7</button></td>
+    <td><button id="logojp38" onclick= " location.href = '#jp38' " class="tank"><div style="font-size:8pt;">Jagdpanzer 38(t)</div>4.7</button></td>
+    <td><button  onclick= " location.href = '#pz.bfw.4' " class="tank2">Pz.Bfw.lV<br>1,750 <img id="goldicon1" src="../../image/gold.svg">&nbsp; <span id="logopz.bfw.4">4.0</span></button></td>
+    <td><button id="logo" onclick= " location.href = '#' " class="tank2">KV-lB<br> &nbsp; 4.0</button></td>
   </tr>
   <tr>
-    <td><button onclick= " location.href = '#nh' " class="tank">Nashorn<br>5.3</button></td>
-    <td><button onclick= " location.href = '#tigere' " class="tank">Tiger E<br>5.7</button></td>
+    <td><button id="logonh" onclick= " location.href = '#nh' " class="tank">Nashorn<br>5.3</button></td>
+    <td><button id="logotigere" onclick= " location.href = '#tigere' " class="tank">Tiger E<br>5.7</button></td>
     <td>
       <div id="show">
-        <button onclick= " location.href = '#88' " class="tank">Pz.lV H / J<br>4.0 - 4.3</button>
+        <button id="logopz4hj" onclick= " location.href = '#88' " class="tank">Pz.lV H / J<br>4.0 - 4.3</button>
       <div id="hide">
-        <button onclick= " location.href = '#pz4h' " class="tank">Pz.lV H<br>4.0</button><br><br>
-        <button onclick= " location.href = '#pz4j' " class="tank">Pz.lV J<br>4.3</button>
+        <button id="logopz4h" onclick= " location.href = '#pz4h' " class="tank">Pz.lV H<br>4.0</button><br><br>
+        <button id="logopz4j" onclick= " location.href = '#pz4j' " class="tank">Pz.lV J<br>4.3</button>
       </div>
       </div>
     </td>
-    <td><button onclick= " location.href = '#ost' " class="tank">Ostwind<br>4.7</button></td>
-    <td><button onclick= " location.href = '#jp4' " class="tank">Jagdpanzer lV<br>4.7</button></td>
-    <td><button onclick= " location.href = '#kv2' " class="tank2">KV-ll 754(r)<br>2,980 <img id="goldicon1" src="../../image/gold.svg">&nbsp; 4.3</button></td>
-    <td><button onclick= " location.href = '#churchill' " class="tank2">Churchill<br>1,600 <img id="goldicon1" src="../../image/gold.svg">&nbsp; 4.0</button></td>
+    <td><button id="logoost" onclick= " location.href = '#ost' " class="tank">Ostwind<br>4.7</button></td>
+    <td><button id="logojp4" onclick= " location.href = '#jp4' " class="tank">Jagdpanzer lV<br>4.7</button></td>
+    <td><button  onclick= " location.href = '#kv2' " class="tank2">KV-ll 754(r)<br>2,980 <img id="goldicon1" src="../../image/gold.svg">&nbsp;<span id="logokv2">4.3</span></button></td>
+    <td><button id="logochurchill" onclick= " location.href = '#churchill' " class="tank2">Churchill<br>1,600 <img id="goldicon1" src="../../image/gold.svg">&nbsp; 4.0</button></td>
   </tr>
   <tr>
-    <td><button onclick= " location.href = '#se' " class="tank">Sturer Emil<br>5.3</button></td>
+    <td><button id="logose" onclick= " location.href = '#se' " class="tank">Sturer Emil<br>5.3</button></td>
     <td></td>
-    <td><button onclick= " location.href = '#pd' " class="tank">Panter D<br>5.7</button></td>
+    <td><button id="logopd" onclick= " location.href = '#pd' " class="tank">Panter D<br>5.7</button></td>
     <td></td>
-    <td><button onclick= " location.href = '#jp470' " class="tank">Panzer lV/70(V)<br>5.3</button></td>
-    <td><button onclick= " location.href = '#jp470a' " class="tank2">Panzer lV/70(A)<br>3,850 <img id="goldicon1" src="../../image/gold.svg">&nbsp; 5.0</button></td>
-    <td><button onclick= " location.href = '#brum' " class="tank2">Brummbar<br>2,980 <img id="goldicon1" src="../../image/gold.svg">&nbsp; 4.7</button></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td><button onclick= " location.href = '#' " class="tank2">Ersatz M10<br> &nbsp; 5.7</button></td>
-    <td><button onclick= " location.href = '#' " class="tank2">KV-lB 756(r)<br>1,600 <img id="goldicon1" src="../../image/gold.svg">&nbsp; 5.0</button></td>
+    <td><button id="logojp470" onclick= " location.href = '#jp470' " class="tank">Panzer lV/70(V)<br>5.3</button></td>
+    <td><button id="logojp470a" onclick= " location.href = '#jp470a' " class="tank2">Panzer lV/70(A)<br>3,850 <img id="goldicon1" src="../../image/gold.svg">&nbsp; 5.0</button></td>
+    <td><button id="logobrum" onclick= " location.href = '#brum' " class="tank2">Brummbar<br>2,980 <img id="goldicon1" src="../../image/gold.svg">&nbsp; 4.7</button></td>
   </tr>
   <tr>
     <td></td>
@@ -684,43 +816,52 @@ hr {
     <td></td>
     <td></td>
     <td></td>
-    <td><button onclick= " location.href = '#' " class="tank2">Tiger<br>&nbsp; 5.7</button></td>
-    <td><button onclick= " location.href = '#' " class="tank2">VK 45.01(P)<br>&nbsp; 3.7</button></td>
+    <td><button id="logo" onclick= " location.href = '#' " class="tank2">Ersatz M10<br> &nbsp; 5.7</button></td>
+    <td><button id="logo" onclick= " location.href = '#' " class="tank2">KV-lB 756(r)<br>1,600 <img id="goldicon1" src="../../image/gold.svg">&nbsp; 5.0</button></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><button id="logo" onclick= " location.href = '#' " class="tank2">Tiger<br>&nbsp; 5.7</button></td>
+    <td><button id="logo" onclick= " location.href = '#' " class="tank2">VK 45.01(P)<br>&nbsp; 3.7</button></td>
   </tr>
 </table><br>
 <hr>
 <br><table id="tree">
   <tr>
     <td rowspan="3" class="tier">lV</td>
-    <td><button onclick= " location.href = '#wt' " class="tank">Waffentrager<br>5.7</button></td>
-    <td><button onclick= " location.href = '#tiger2p' " class="tank">Tiger ll (P)<br>6.3</button></td>
+    <td><button id="logowt" onclick= " location.href = '#wt' " class="tank">Waffentrager<br>5.7</button></td>
+    <td><button id="logotiger2p" onclick= " location.href = '#tiger2p' " class="tank">Tiger ll (P)<br>6.3</button></td>
     <td>
       <div id="show">
-        <button onclick= " location.href = '#' " class="tank">Panter A / G <br>5.7 - 6.0</button>
+        <button id="logo" onclick= " location.href = '#' " class="tank">Panter A / G <br>5.7 - 6.0</button>
       <div id="hide">
-        <button onclick= " location.href = '#pa' " class="tank">Panter A<br>5.7</button><br><br>
-        <button onclick= " location.href = '#pg' " class="tank">Panter G<br>6.0</button>
+        <button id="logopa" onclick= " location.href = '#pa' " class="tank">Panter A<br>5.7</button><br><br>
+        <button id="logopg" onclick= " location.href = '#pg' " class="tank">Panter G<br>6.0</button>
       </div>
       </div>
     </td>
-    <td><button onclick= " location.href = '#aa341' " class="tank">Flakpanzer 341<br>6.7</button></td>
-    <td><button onclick= " location.href = '#jp' " class="tank">Jagdpanther<br>6.3</button></td>
-    <td><button onclick= " location.href = '#bfwjp' " class="tank2">Bfw.Jagdpanther<br>6,090 <img id="goldicon1" src="../../image/gold.svg">&nbsp; 6.3</button></td>
-    <td><button onclick= " location.href = '#tiger2hsla' " class="tank2"><div style="font-size:8pt;">Tiger ll (H) Sla.16</div>&nbsp; 6.7</button></td>
+    <td><button id="logoaa341" onclick= " location.href = '#aa341' " class="tank">Flakpanzer 341<br>6.7</button></td>
+    <td><button id="logojp" onclick= " location.href = '#jp' " class="tank">Jagdpanther<br>6.3</button></td>
+    <td><button onclick= " location.href = '#bfwjp' " class="tank2">Bfw.Jagdpanther<br>6,090 <img id="goldicon1" src="../../image/gold.svg">&nbsp; <span id="logobfwjp">6.3</span></button></td>
+    <td><button id="logotiger2hsla" onclick= " location.href = '#tiger2hsla' " class="tank2"><div style="font-size:8pt;">Tiger ll (H) Sla.16</div>&nbsp; 6.7</button></td>
   </tr>
   <tr>
     <td></td>
-    <td><button onclick= " location.href = '#tiger2h' " class="tank">Tiger ll (H)<br>6.7</button></td>
-    <td><button onclick= " location.href = '#pf' " class="tank">Panther F<br>6.0</button></td>
+    <td><button id="logotiger2h" onclick= " location.href = '#tiger2h' " class="tank">Tiger ll (H)<br>6.7</button></td>
+    <td><button id="logopf" onclick= " location.href = '#pf' " class="tank">Panther F<br>6.0</button></td>
     <td></td>
-    <td><button onclick= " location.href = '#ferd' " class="tank">Ferdinand<br>6.3</button></td>
-    <td><button onclick= " location.href = '#88' " class="tank2">Pz.Bfw.Vl(P)<br>6,090 <img id="goldicon1" src="../../image/gold.svg">&nbsp; 5.7</button></td>
-    <td><button onclick= " location.href = '#88' " class="tank2">Ru 251<br>7,480 <img id="goldicon1" src="../../image/gold.svg">&nbsp; 6.7</button></td>
+    <td><button id="logoferd" onclick= " location.href = '#ferd' " class="tank">Ferdinand<br>6.3</button></td>
+    <td><button id="logo" onclick= " location.href = '#88' " class="tank2">Pz.Bfw.Vl(P)<br>6,090 <img id="goldicon1" src="../../image/gold.svg">&nbsp; 5.7</button></td>
+    <td><button id="logo" onclick= " location.href = '#88' " class="tank2">Ru 251<br>7,480 <img id="goldicon1" src="../../image/gold.svg">&nbsp; 6.7</button></td>
   </tr>
   <tr>
     <td></td>
     <td></td>
-    <td><button onclick= " location.href = '#p2' " class="tank">Pather ll<br>6.7</button></td>
+    <td><button id="logop2" onclick= " location.href = '#p2' " class="tank">Pather ll<br>6.7</button></td>
     <td></td>
     <td></td>
     <td></td>
@@ -731,21 +872,21 @@ hr {
 <br><table id="tree">
     <tr>
       <td rowspan="2" class="tier">V</td>
-      <td><button onclick= " location.href = '#jpz' " class="tank">Jpz 4-5<br>7.0</button></td>
-      <td><button onclick= " location.href = '#tiger2105' " class="tank"><div style="font-size:9pt;">Tiger ll (10.5cm)</div>7.0</button></td>
-      <td><button onclick= " location.href = '#leo' " class="tank">Leopard l<br>7.7</button></td>
-      <td><button onclick= " location.href = '#aa4' " class="tank">Kugelblitz<br>7.0</button></td>
-      <td><button onclick= " location.href = '#jt' " class="tank">Jagdtiger<br>7.0</button></td>
-      <td><button onclick= " location.href = '#88' " class="tank2">mKPz M47 G<br>Pack &nbsp; 7.3</button></td>
-      <td><button onclick= " location.href = '#88' " class="tank2">Leopard A1A1 <br>Pack &nbsp; 8.7</button></td>
+      <td><button id="logojpz" onclick= " location.href = '#jpz' " class="tank">Jpz 4-5<br>6.7</button></td>
+      <td><button id="logotiger2105" onclick= " location.href = '#tiger2105' " class="tank"><div style="font-size:9pt;">Tiger ll (10.5cm)</div>6.7</button></td>
+      <td><button id="logoleo" onclick= " location.href = '#leo' " class="tank">Leopard l<br>7.7</button></td>
+      <td><button id="logoaa4" onclick= " location.href = '#aa4' " class="tank">Kugelblitz<br>7.0</button></td>
+      <td><button id="logojt" onclick= " location.href = '#jt' " class="tank">Jagdtiger<br>7.0</button></td>
+      <td><button id="logom47" onclick= " location.href = '#88' " class="tank2">mKPz M47 G<br>Pack &nbsp; 7.3</button></td>
+      <td><button id="logo88" onclick= " location.href = '#88' " class="tank2">Leopard A1A1 <br>Pack &nbsp; 8.7</button></td>
     </tr>
     <tr>
+      <td><button id="logorak" onclick= " location.href = '#rak' " class="tank">RakJPz 2<br>8.3</button></td>
+      <td><button id="logomaus" onclick= " location.href = '#maus' " class="tank">Maus<br>7.7</button></td>
+      <td><button id="logom48" onclick= " location.href = '#m48' " class="tank">M48A2 G A2<br>7.7</button></td>
       <td></td>
-      <td><button onclick= " location.href = '#rak' " class="tank">RakJPz 2<br>8.3</button></td>
-      <td><button onclick= " location.href = '#maus' " class="tank">Maus<br>7.7</button></td>
       <td></td>
-      <td><button onclick= " location.href = '#m48' " class="tank">M48A2 G A2<br>7.7</button></td>
-      <td><button onclick= " location.href = '#' " class="tank">E-100<br>7.7</button></td>
+      <td><button id="logo" onclick= " location.href = '#' " class="tank">E-100<br>7.7</button></td>
       <td></td>
     </tr>
   </table><br>
@@ -753,31 +894,31 @@ hr {
   <br><table id="tree">
     <tr>
       <td rowspan="3" class="tier">Vl</td>
-      <td><button onclick= " location.href = '#rak2hot' " class="tank">RakJPz 2 (HOT)<br>9.3</button></td>
-      <td><button onclick= " location.href = '#kpz' " class="tank">KPz-70<br>9.3</button></td>
-      <td><button onclick= " location.href = '#leoa1a1' " class="tank">Leopard A1A1<br>8.7</button></td>
-      <td><button onclick= " location.href = '#aa5' " class="tank">Gepard<br>8.0</button></td>
-      <td><button onclick= " location.href = '#bp' " class="tank"><div style="font-size:11px;">Begleitpanzer 57</div>8.3</button></td>
+      <td><button id="logorak2hot" onclick= " location.href = '#rak2hot' " class="tank">RakJPz 2 (HOT)<br>9.3</button></td>
+      <td><button id="logokpz" onclick= " location.href = '#kpz' " class="tank">KPz-70<br>9.0</button></td>
+      <td><button id="logoleoa1a1" onclick= " location.href = '#leoa1a1' " class="tank">Leopard A1A1<br>8.7</button></td>
+      <td><button id="logoaa5" onclick= " location.href = '#aa5' " class="tank">Gepard<br>8.0</button></td>
+      <td><button id="logobp" onclick= " location.href = '#bp' " class="tank"><div style="font-size:11px;">Begleitpanzer 57</div>8.3</button></td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td></td>
       <td></td>
-      <td><button onclick= " location.href = '#leo2k' " class="tank">Leopard 2K<br>9.7</button></td>
+      <td><button id="logoleo2k" onclick= " location.href = '#leo2k' " class="tank">Leopard 2K<br>9.7</button></td>
       <td></td>
-      <td><button onclick= " location.href = '#tam' " class="tank">TAM<br>8.7</button></td>
+      <td><button id="logotam" onclick= " location.href = '#tam' " class="tank">TAM<br>8.7</button></td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td></td>
       <td></td>
-      <td><button onclick= " location.href = '#leo2a4' " class="tank">Leopard 2A4<br>10.0</button></td>
+      <td><button id="logoleo2a4" onclick= " location.href = '#leo2a4' " class="tank">Leopard 2A4<br>10.0</button></td>
       <td></td>
       <td></td>
-      <td><button class="empty-cells"></button></td>
-      <td><button class="empty-cells"></button></td>
+      <td><button id="logo" class="empty-cells"></button></td>
+      <td><button id="logo" class="empty-cells"></button></td>
     </tr>
   </table><br>
 
@@ -834,7 +975,7 @@ hr {
                  </tr>
                  <tr>
                    <td class="introitem">10</td>
-                   <td class="introitem">310 <img id="silvericon" src="../../image/silver.svg"></td>
+                   <td class="introitem">290 <img id="silvericon" src="../../image/silver.svg"></td>
                    <td class="introitem">25분</td>
                    <td class="introitem">l - ll</td>
                    <td class="introitem">100%</td>
@@ -1053,11 +1194,11 @@ hr {
                             </tr>
                             <tr>
                               <td class="introitem">10</td>
-                              <td class="introitem">330 <img id="silvericon" src="../../image/silver.svg"></td>
+                              <td class="introitem">300 <img id="silvericon" src="../../image/silver.svg"></td>
                               <td class="introitem">25분</td>
                               <td class="introitem">l - ll</td>
                               <td class="introitem">100%</td>
-                              <td class="introitem">40%</td>
+                              <td class="introitem">50%</td>
                             </tr>
                           </table>
                            <br><br><br><h3 style="margin:auto; font-size:20pt;">------------- 연구 ---------------</h3> <br><br>
@@ -1295,7 +1436,7 @@ hr {
            </tr>
            <tr>
              <td class="introitem">10</td>
-             <td class="introitem">250 <img id="silvericon" src="../../image/silver.svg"></td>
+             <td class="introitem">260 <img id="silvericon" src="../../image/silver.svg"></td>
              <td class="introitem">54분</td>
              <td class="introitem">l - ll</td>
              <td class="introitem">112%</td>
@@ -1537,7 +1678,7 @@ hr {
         </tr>
         <tr>
           <td class="introitem">10</td>
-          <td class="introitem">810 <img id="silvericon" src="../../image/silver.svg"></td>
+          <td class="introitem">800 <img id="silvericon" src="../../image/silver.svg"></td>
           <td class="introitem">2시간 51분</td>
           <td class="introitem">l - lll</td>
           <td class="introitem">118%</td>
@@ -2118,7 +2259,7 @@ hr {
         </tr>
         <tr>
           <td class="introitem">10</td>
-          <td class="introitem">1,030 <img id="silvericon" src="../../image/silver.svg"></td>
+          <td class="introitem">1,210 <img id="silvericon" src="../../image/silver.svg"></td>
           <td class="introitem">4시간 11분</td>
           <td class="introitem">l - lll</td>
           <td class="introitem">124%</td>
@@ -2408,7 +2549,7 @@ hr {
         </tr>
         <tr>
           <td class="introitem">10</td>
-          <td class="introitem">1050</td>
+          <td class="introitem">1,170<img id="silvericon" src="../../image/silver.svg"></td>
           <td class="introitem">9시간 47분</td>
           <td class="introitem">l - lll</td>
           <td class="introitem">136%</td>
@@ -2652,7 +2793,7 @@ hr {
         </tr>
         <tr>
           <td class="introitem">10</td>
-          <td class="introitem">1,360</td>
+          <td class="introitem">1,390<img id="silvericon" src="../../image/silver.svg"></td>
           <td class="introitem">20시간 55분</td>
           <td class="introitem">ll - lV</td>
           <td class="introitem">148%</td>
@@ -3209,7 +3350,7 @@ hr {
         </tr>
         <tr>
           <td class="introitem">10</td>
-          <td class="introitem">2,000 <img id="silvericon" src="../../image/silver.svg"></td>
+          <td class="introitem">1,570 <img id="silvericon" src="../../image/silver.svg"></td>
           <td class="introitem">3일 02시간</td>
           <td class="introitem">ll - lV</td>
           <td class="introitem">166%</td>
@@ -3475,7 +3616,7 @@ hr {
         </tr>
         <tr>
           <td class="introitem">10</td>
-          <td class="introitem">1,940 <img id="silvericon" src="../../image/silver.svg"></td>
+          <td class="introitem">1,970 <img id="silvericon" src="../../image/silver.svg"></td>
           <td class="introitem">3일 13시간</td>
           <td class="introitem">lll - V</td>
           <td class="introitem">166%</td>
@@ -3720,7 +3861,7 @@ hr {
       <br><br><br><br><h3 style="margin:auto; font-size:30pt;">------------- Jpz4-5 ---------------</h3> <br><br><br>
       <table id="intro">
         <tr>
-          <td class="intromain" rowspan="6"><br>하노마크-헨셸 Jpz4-5<br>구축전차<br>랭크: V &nbsp; BR: 7.0 <br><br><center>
+          <td class="intromain" rowspan="6"><br>하노마크-헨셸 Jpz4-5<br>구축전차<br>랭크: V &nbsp; BR: 6.7 <br><br><center>
             <img src="tankimage/jpz.png" style="width:200px;"></img><br>
             <br>90mm BK 90/L40 ( 51 )<br>7.62mm MG3A1 x2 ( 5,000 )<br><br>
           </td>
@@ -3765,7 +3906,7 @@ hr {
         </tr>
         <tr>
           <td class="introitem">10</td>
-          <td class="introitem">2,300 <img id="silvericon" src="../../image/silver.svg"></td>
+          <td class="introitem">1,920 <img id="silvericon" src="../../image/silver.svg"></td>
           <td class="introitem">7일</td>
           <td class="introitem">lV - Vl</td>
           <td class="introitem">200%</td>
@@ -3776,7 +3917,7 @@ hr {
          <table id="modi">
            <tr>
              <td class="rank" rowspan="4"></td>
-             <td class="item"><img class="modicon" align="left" src="../modifications/tankicon.svg"><div>Jpz4-5<br><br><br>7.0</td>
+             <td class="item"><img class="modicon" align="left" src="../modifications/tankicon.svg"><div>Jpz4-5<br><br><br>6.7</td>
              <td class="item"><img class="modicon" align="left" src="../modifications/backup.svg">예비장비<br><br><br>10 <img id="goldicon2" src="../../image/gold.svg"></td>
              <td class="item"><img class="modicon" align="left" src="../modifications/talisman.svg">부적<br><br><br> <img id="goldicon2" src="../../image/gold.svg"></td>
              <td class="item"></td>
@@ -4056,7 +4197,7 @@ hr {
         </tr>
         <tr>
           <td class="introitem">10</td>
-          <td class="introitem">1,580 <img id="silvericon" src="../../image/silver.svg"></td>
+          <td class="introitem">1,560 <img id="silvericon" src="../../image/silver.svg"></td>
           <td class="introitem">8일</td>
           <td class="introitem">lV - Vl</td>
           <td class="introitem">200%</td>
@@ -4277,7 +4418,7 @@ hr {
            </tr>
            <tr>
              <td class="introitem">10</td>
-             <td class="introitem">2,800 <img id="silvericon" src="../../image/silver.svg"></td>
+             <td class="introitem">1,900 <img id="silvericon" src="../../image/silver.svg"></td>
              <td class="introitem">9일</td>
              <td class="introitem">V - Vl</td>
              <td class="introitem">200%</td>
@@ -4743,7 +4884,7 @@ hr {
         </tr>
         <tr>
           <td class="introitem">10</td>
-          <td class="introitem">310 <img id="silvericon" src="../../image/silver.svg"></td>
+          <td class="introitem">280 <img id="silvericon" src="../../image/silver.svg"></td>
           <td class="introitem">25분</td>
           <td class="introitem">l - ll</td>
           <td class="introitem">100%</td>
@@ -4988,7 +5129,7 @@ hr {
         </tr>
         <tr>
           <td class="introitem">10</td>
-          <td class="introitem">480 <img id="silvericon" src="../../image/silver.svg"></td>
+          <td class="introitem">440 <img id="silvericon" src="../../image/silver.svg"></td>
           <td class="introitem">40분</td>
           <td class="introitem">l - ll</td>
           <td class="introitem">106%</td>
@@ -5256,7 +5397,7 @@ hr {
            </tr>
            <tr>
              <td class="introitem">10</td>
-             <td class="introitem">560 <img id="silvericon" src="../../image/silver.svg"></td>
+             <td class="introitem">510 <img id="silvericon" src="../../image/silver.svg"></td>
              <td class="introitem">40분</td>
              <td class="introitem">l - ll</td>
              <td class="introitem">106%</td>
@@ -5523,7 +5664,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">10</td>
-        <td class="introitem">670</td>
+        <td class="introitem">610</td>
         <td class="introitem">2시간 07분</td>
         <td class="introitem">l - lll</td>
         <td class="introitem">118%</td>
@@ -5767,7 +5908,7 @@ hr {
     <br><br><br><br><h3 style="margin:auto; font-size:30pt;">------------- 3호전차 L형 ---------------</h3> <br><br><br>
     <table id="intro">
       <tr>
-        <td class="intromain" rowspan="6"><br>3호전차 L형<br>중형전차<br>랭크: ll &nbsp; BR: 3.3 <br><br><center>
+        <td class="intromain" rowspan="6"><br>3호전차 L형<br>중형전차<br>랭크: ll &nbsp; BR: 3.0 <br><br><center>
           <img src="tankimage/pz3l.png" style="width:200px;"></img><br>
           <br>50mm KwK39 ( 84 )<br>7.92mm MG34 ( 3750 )<br><br>
         </td>
@@ -5812,7 +5953,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">10</td>
-        <td class="introitem">980</td>
+        <td class="introitem">880</td>
         <td class="introitem">6시간 24분</td>
         <td class="introitem">l - lll</td>
         <td class="introitem">130%</td>
@@ -5823,7 +5964,7 @@ hr {
        <table id="modi">
          <tr>
            <td class="rank" rowspan="4"></td>
-           <td class="item"><img class="modicon" align="left" src="../modifications/tankicon.svg"><div style="font-size:11pt;">3호전차 L형</div><br><br>3.3</td>
+           <td class="item"><img class="modicon" align="left" src="../modifications/tankicon.svg"><div style="font-size:11pt;">3호전차 L형</div><br><br>3.0</td>
            <td class="item"><img class="modicon" align="left" src="../modifications/backup.svg">예비장비<br><br><br>20 <img id="goldicon2" src="../../image/gold.svg"></td>
            <td class="item"><img class="modicon" align="left" src="../modifications/talisman.svg">부적<br><br><br> <img id="goldicon2" src="../../image/gold.svg"></td>
            <td class="item"></td>
@@ -6056,7 +6197,7 @@ hr {
      <br><br><br><br><h3 style="margin:auto; font-size:30pt;">------------- 3호전차 M형 ---------------</h3> <br><br><br>
      <table id="intro">
        <tr>
-         <td class="intromain" rowspan="6"><br>3호전차 M형<br>중형전차<br>랭크: ll &nbsp; BR: 3.3 <br><br><center>
+         <td class="intromain" rowspan="6"><br>3호전차 M형<br>중형전차<br>랭크: ll &nbsp; BR: 3.0 <br><br><center>
            <img src="tankimage/pz3m.png" style="width:200px;"></img><br>
            <br>50mm KwK39 ( 84 )<br>7.92mm MG34 ( 3750 )<br><br>
          </td>
@@ -6101,7 +6242,7 @@ hr {
        </tr>
        <tr>
          <td class="introitem">10</td>
-         <td class="introitem">1,100</td>
+         <td class="introitem">970 <img id="silvericon" src="../../image/silver.svg"></td>
          <td class="introitem">11시간 07분</td>
          <td class="introitem">l - lll</td>
          <td class="introitem">136%</td>
@@ -6112,7 +6253,7 @@ hr {
         <table id="modi">
           <tr>
             <td class="rank" rowspan="4"></td>
-            <td class="item"><img class="modicon" align="left" src="../modifications/tankicon.svg"><div style="font-size:11pt;">3호전차 M형</div><br><br>3.3</td>
+            <td class="item"><img class="modicon" align="left" src="../modifications/tankicon.svg"><div style="font-size:11pt;">3호전차 M형</div><br><br>3.0</td>
             <td class="item"><img class="modicon" align="left" src="../modifications/backup.svg">예비장비<br><br><br>20 <img id="goldicon2" src="../../image/gold.svg"></td>
             <td class="item"><img class="modicon" align="left" src="../modifications/talisman.svg">부적<br><br><br> <img id="goldicon2" src="../../image/gold.svg"></td>
             <td class="item"></td>
@@ -6391,7 +6532,7 @@ hr {
          </tr>
          <tr>
            <td class="introitem">10</td>
-           <td class="introitem">1,770</td>
+           <td class="introitem">1,650</td>
            <td class="introitem">2일 14시간</td>
            <td class="introitem">ll - lV</td>
            <td class="introitem">160%</td>
@@ -6681,7 +6822,7 @@ hr {
         </tr>
         <tr>
           <td class="introitem">10</td>
-          <td class="introitem">2,330 <img id="silvericon" src="../../image/silver.svg"></td>
+          <td class="introitem">2,250 <img id="silvericon" src="../../image/silver.svg"></td>
           <td class="introitem">3일 18시간</td>
           <td class="introitem">ll - lV</td>
           <td class="introitem">166%</td>
@@ -6994,7 +7135,7 @@ hr {
           </tr>
           <tr>
             <td class="introitem">10</td>
-            <td class="introitem">5,900 <img id="silvericon" src="../../image/silver.svg"></td>
+            <td class="introitem">4,670 <img id="silvericon" src="../../image/silver.svg"></td>
             <td class="introitem">7일</td>
             <td class="introitem">lll - V</td>
             <td class="introitem">178%</td>
@@ -7284,7 +7425,7 @@ hr {
         </tr>
         <tr>
           <td class="introitem">10</td>
-          <td class="introitem">6,000 <img id="silvericon" src="../../image/silver.svg"></td>
+          <td class="introitem">6,200 <img id="silvericon" src="../../image/silver.svg"></td>
           <td class="introitem">8일</td>
           <td class="introitem">lll - V</td>
           <td class="introitem">184%</td>
@@ -7529,7 +7670,7 @@ hr {
      <br><br><br><br><h3 style="margin:auto; font-size:30pt;">------------- Tiger II (10.5 cm Kw.K) ---------------</h3> <br><br><br>
      <table id="intro">
        <tr>
-         <td class="intromain" rowspan="6"><br>Tiger II (10.5 cm Kw.K)<br>중전차<br>랭크: V &nbsp; BR: 7.0 <br><br><center>
+         <td class="intromain" rowspan="6"><br>Tiger II (10.5 cm Kw.K)<br>중전차<br>랭크: V &nbsp; BR: 6.7 <br><br><center>
            <img src="tankimage/tiger2105.png" style="width:200px;"></img><br>
            <br>105mm KwK46 L/68 ( 54 )<br>7.92mm MG34 ( 5850 )<br><br>
          </td>
@@ -7574,7 +7715,7 @@ hr {
        </tr>
        <tr>
          <td class="introitem">10</td>
-         <td class="introitem">5,900 <img id="silvericon" src="../../image/silver.svg"></td>
+         <td class="introitem">4,680 <img id="silvericon" src="../../image/silver.svg"></td>
          <td class="introitem">10일</td>
          <td class="introitem">lV - Vl</td>
          <td class="introitem">200%</td>
@@ -7585,7 +7726,7 @@ hr {
         <table id="modi">
           <tr>
             <td class="rank" rowspan="4"></td>
-            <td class="item"><img class="modicon" align="left" src="../modifications/tankicon.svg"><div>티거 2<br>(10.5cm)</div><br>7.0</td>
+            <td class="item"><img class="modicon" align="left" src="../modifications/tankicon.svg"><div>티거 2<br>(10.5cm)</div><br>6.7</td>
             <td class="item"><img class="modicon" align="left" src="../modifications/backup.svg">예비장비<br><br><br>30 <img id="goldicon2" src="../../image/gold.svg"></td>
             <td class="item"><img class="modicon" align="left" src="../modifications/talisman.svg">부적<br><br><br> <img id="goldicon2" src="../../image/gold.svg"></td>
             <td class="item"></td>
@@ -7864,7 +8005,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">10</td>
-        <td class="introitem">6,660 <img id="silvericon" src="../../image/silver.svg"></td>
+        <td class="introitem">6,820 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">13일</td>
         <td class="introitem">lV - Vl</td>
         <td class="introitem">200%</td>
@@ -8219,7 +8360,7 @@ hr {
       <br><br><br><br><h3 style="margin:auto; font-size:30pt;">------------- KPz-70 ---------------</h3> <br><br><br>
       <table id="intro">
         <tr>
-          <td class="intromain" rowspan="6"><br>KPz-70<br>중형전차<br>랭크: Vl &nbsp; BR: 9.3 <br><br><center>
+          <td class="intromain" rowspan="6"><br>KPz-70<br>중형전차<br>랭크: Vl &nbsp; BR: 9.0 <br><br><center>
             <img src="tankimage/kpz.png" style="width:200px;"></img><br>
             <br>152mm XM105E5 gun/launcher ( 48 )<br>20mm Rh202 ( 750 )<br>7.62mm MG3A1 ( 6000 )<br><br>
           </td>
@@ -8264,7 +8405,7 @@ hr {
         </tr>
         <tr>
           <td class="introitem">10</td>
-          <td class="introitem">2,800 <img id="silvericon" src="../../image/silver.svg"></td>
+          <td class="introitem">2,210 <img id="silvericon" src="../../image/silver.svg"></td>
           <td class="introitem">10일</td>
           <td class="introitem">V - Vl</td>
           <td class="introitem">200%</td>
@@ -8275,7 +8416,7 @@ hr {
          <table id="modi">
            <tr>
              <td class="rank" rowspan="4"></td>
-             <td class="item"><img class="modicon" align="left" src="../modifications/tankicon.svg"><div>KPz-70</div><br><br>9.3</td>
+             <td class="item"><img class="modicon" align="left" src="../modifications/tankicon.svg"><div>KPz-70</div><br><br>9.0</td>
              <td class="item"><img class="modicon" align="left" src="../modifications/backup.svg">예비장비<br><br><br>10 <img id="goldicon2" src="../../image/gold.svg"></td>
              <td class="item"><img class="modicon" align="left" src="../modifications/talisman.svg">부적<br><br><br> <img id="goldicon2" src="../../image/gold.svg"></td>
              <td class="item"></td>
@@ -8653,7 +8794,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">10</td>
-        <td class="introitem">140</td>
+        <td class="introitem">130 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">21분</td>
         <td class="introitem">l - ll</td>
         <td class="introitem">100%</td>
@@ -8919,11 +9060,11 @@ hr {
        </tr>
        <tr>
          <td class="introitem">10</td>
-         <td class="introitem">140</td>
+         <td class="introitem">130 <img id="silvericon" src="../../image/silver.svg"></td>
          <td class="introitem">21분</td>
          <td class="introitem">l - ll</td>
          <td class="introitem">100%</td>
-         <td class="introitem">20%</td>
+         <td class="introitem">10%</td>
        </tr>
      </table>
       <br><br><br><h3 style="margin:auto; font-size:20pt;">------------- 연구 ---------------</h3> <br><br>
@@ -9185,7 +9326,7 @@ hr {
          </tr>
          <tr>
            <td class="introitem">10</td>
-           <td class="introitem">320</td>
+           <td class="introitem">300 <img id="silvericon" src="../../image/silver.svg"></td>
            <td class="introitem">25분</td>
            <td class="introitem">l - ll</td>
            <td class="introitem">100%</td>
@@ -9475,7 +9616,7 @@ hr {
     </tr>
     <tr>
       <td class="introitem">10</td>
-      <td class="introitem">550</td>
+      <td class="introitem">510 <img id="silvericon" src="../../image/silver.svg"></td>
       <td class="introitem">40분</td>
       <td class="introitem">l - ll</td>
       <td class="introitem">106%</td>
@@ -9788,7 +9929,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">10</td>
-        <td class="introitem">590</td>
+        <td class="introitem">490 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">1시간 01분</td>
         <td class="introitem">l - lll</td>
         <td class="introitem">112%</td>
@@ -10101,7 +10242,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">10</td>
-        <td class="introitem">1,130</td>
+        <td class="introitem">1,050 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">5시간 32분</td>
         <td class="introitem">l - lll</td>
         <td class="introitem">124%</td>
@@ -10414,7 +10555,7 @@ hr {
        </tr>
        <tr>
          <td class="introitem">10</td>
-         <td class="introitem">1,620</td>
+         <td class="introitem">1,510 <img id="silvericon" src="../../image/silver.svg"></td>
          <td class="introitem">21시간 39분</td>
          <td class="introitem">ll - lV</td>
          <td class="introitem">142%</td>
@@ -10727,7 +10868,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">10</td>
-        <td class="introitem">1,470</td>
+        <td class="introitem">1,350 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">23시간 08분</td>
         <td class="introitem">ll - lV</td>
         <td class="introitem">148%</td>
@@ -11039,7 +11180,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">10</td>
-        <td class="introitem">2,020</td>
+        <td class="introitem">1,900 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">2일 01시간</td>
         <td class="introitem">ll - lV</td>
         <td class="introitem">154%</td>
@@ -11351,7 +11492,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">10</td>
-        <td class="introitem">1,700</td>
+        <td class="introitem">1,560 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">2일 19시간</td>
         <td class="introitem">ll - lV</td>
         <td class="introitem">160%</td>
@@ -11595,7 +11736,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">10</td>
-        <td class="introitem">2,160</td>
+        <td class="introitem">2,300 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">3일 18시간</td>
         <td class="introitem">lll - V</td>
         <td class="introitem">166%</td>
@@ -11862,7 +12003,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">10</td>
-        <td class="introitem">2,090</td>
+        <td class="introitem">1,830 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">4일 12시간</td>
         <td class="introitem">lll - V</td>
         <td class="introitem">172%</td>
@@ -12129,7 +12270,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">10</td>
-        <td class="introitem">3,700</td>
+        <td class="introitem">2,500 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">6일</td>
         <td class="introitem">lll - V</td>
         <td class="introitem">184%</td>
@@ -12397,7 +12538,7 @@ hr {
          </tr>
          <tr>
            <td class="introitem">10</td>
-           <td class="introitem">3,800</td>
+           <td class="introitem">4,530 <img id="silvericon" src="../../image/silver.svg"></td>
            <td class="introitem">7일</td>
            <td class="introitem">lll - V</td>
            <td class="introitem">196%</td>
@@ -12687,7 +12828,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">10</td>
-        <td class="introitem">3,410</td>
+        <td class="introitem">3,320 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">10일</td>
         <td class="introitem">lV - Vl</td>
         <td class="introitem">200%</td>
@@ -12954,7 +13095,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">10</td>
-        <td class="introitem">6,000</td>
+        <td class="introitem">4,000 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">11일</td>
         <td class="introitem">lV - Vl</td>
         <td class="introitem">200%</td>
@@ -13221,7 +13362,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">10</td>
-        <td class="introitem">4,400</td>
+        <td class="introitem">5,720</td>
         <td class="introitem">10일</td>
         <td class="introitem">V - Vl</td>
         <td class="introitem">200%</td>
@@ -13511,7 +13652,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">10</td>
-        <td class="introitem">6,500</td>
+        <td class="introitem">5,310 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">13일</td>
         <td class="introitem">V - Vl</td>
         <td class="introitem">200%</td>
@@ -13829,7 +13970,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">10</td>
-        <td class="introitem">5,950</td>
+        <td class="introitem">8,900 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">15일</td>
         <td class="introitem">V - Vl</td>
         <td class="introitem">200%</td>
@@ -14099,7 +14240,7 @@ hr {
         </tr>
         <tr>
           <td class="introitem">10</td>
-          <td class="introitem">270</td>
+          <td class="introitem">250 <img id="silvericon" src="../../image/silver.svg"></td>
           <td class="introitem">25분</td>
           <td class="introitem">l - ll</td>
           <td class="introitem">100%</td>
@@ -14387,7 +14528,7 @@ hr {
         </tr>
           <tr>
             <td class="introitem">10</td>
-            <td class="introitem">370</td>
+            <td class="introitem">340 <img id="silvericon" src="../../image/silver.svg"></td>
             <td class="introitem">33분</td>
             <td class="introitem">l - ll</td>
             <td class="introitem">106%</td>
@@ -14675,7 +14816,7 @@ hr {
       </tr>
         <tr>
           <td class="introitem">10</td>
-          <td class="introitem">510</td>
+          <td class="introitem">410 <img id="silvericon" src="../../image/silver.svg"></td>
           <td class="introitem">3시간 06분</td>
           <td class="introitem">l - lll</td>
           <td class="introitem">124%</td>
@@ -14963,7 +15104,7 @@ hr {
       </tr>
         <tr>
           <td class="introitem">10</td>
-          <td class="introitem">1,640</td>
+          <td class="introitem">1,290 <img id="silvericon" src="../../image/silver.svg"></td>
           <td class="introitem">18시간 15분</td>
           <td class="introitem">ll - lV</td>
           <td class="introitem">142%</td>
@@ -15251,11 +15392,11 @@ hr {
       </tr>
         <tr>
           <td class="introitem">10</td>
-          <td class="introitem">290</td>
+          <td class="introitem">190 <img id="silvericon" src="../../image/silver.svg"></td>
           <td class="introitem">1일 12시간</td>
           <td class="introitem">ll - lV</td>
           <td class="introitem">154%</td>
-          <td class="introitem">120%</td>
+          <td class="introitem">110%</td>
       </tr>
     </table>
        <br><br><br><h3 style="margin:auto; font-size:20pt;">------------- 연구 ---------------</h3> <br><br>
@@ -15539,7 +15680,7 @@ hr {
       </tr>
         <tr>
           <td class="introitem">10</td>
-          <td class="introitem">920</td>
+          <td class="introitem">610 <img id="silvericon" src="../../image/silver.svg"></td>
           <td class="introitem">5일 06시간</td>
           <td class="introitem">lll - V</td>
           <td class="introitem">184%</td>
@@ -15827,7 +15968,7 @@ hr {
       </tr>
         <tr>
           <td class="introitem">10</td>
-          <td class="introitem">640</td>
+          <td class="introitem">430 <img id="silvericon" src="../../image/silver.svg"></td>
           <td class="introitem">6일 18시간</td>
           <td class="introitem">lV - Vl</td>
           <td class="introitem">196%</td>
@@ -16115,11 +16256,11 @@ hr {
       </tr>
         <tr>
           <td class="introitem">10</td>
-          <td class="introitem">1,280</td>
+          <td class="introitem">1,900 <img id="silvericon" src="../../image/silver.svg"></td>
           <td class="introitem">9일</td>
           <td class="introitem">V - Vl</td>
           <td class="introitem">200%</td>
-          <td class="introitem">100%</td>
+          <td class="introitem">130%</td>
       </tr>
     </table>
        <br><br><br><h3 style="margin:auto; font-size:20pt;">------------- 연구 ---------------</h3> <br><br>
@@ -16672,11 +16813,11 @@ hr {
         </tr>
         <tr>
           <td class="introitem">10</td>
-          <td class="introitem">140</td>
+          <td class="introitem">120 <img id="silvericon" src="../../image/silver.svg"></td>
           <td class="introitem">21분</td>
           <td class="introitem">l - ll</td>
           <td class="introitem">100%</td>
-          <td class="introitem">20%</td>
+          <td class="introitem">30%</td>
         </tr>
       </table>
        <br><br><br><h3 style="margin:auto; font-size:20pt;">------------- 연구 ---------------</h3> <br><br>
@@ -16938,11 +17079,11 @@ hr {
         </tr>
         <tr>
           <td class="introitem">10</td>
-          <td class="introitem">640</td>
+          <td class="introitem">580 <img id="silvericon" src="../../image/silver.svg"></td>
           <td class="introitem">21분</td>
           <td class="introitem">l - ll</td>
           <td class="introitem">106%</td>
-          <td class="introitem">40%</td>
+          <td class="introitem">50%</td>
         </tr>
       </table>
        <br><br><br><h3 style="margin:auto; font-size:20pt;">------------- 연구 ---------------</h3> <br><br>
@@ -17204,11 +17345,11 @@ hr {
         </tr>
         <tr>
           <td class="introitem">10</td>
-          <td class="introitem">560</td>
+          <td class="introitem">520 <img id="silvericon" src="../../image/silver.svg"></td>
           <td class="introitem">40분</td>
           <td class="introitem">l - ll</td>
           <td class="introitem">106%</td>
-          <td class="introitem">50%</td>
+          <td class="introitem">60%</td>
         </tr>
       </table>
        <br><br><br><h3 style="margin:auto; font-size:20pt;">------------- 연구 ---------------</h3> <br><br>
@@ -17516,7 +17657,7 @@ hr {
         </tr>
         <tr>
           <td class="introitem">10</td>
-          <td class="introitem">1,050</td>
+          <td class="introitem">950 <img id="silvericon" src="../../image/silver.svg"></td>
           <td class="introitem">6시간 24분</td>
           <td class="introitem">l - lll</td>
           <td class="introitem">130%</td>
@@ -17815,7 +17956,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">10</td>
-        <td class="introitem">1,200</td>
+        <td class="introitem">1,110 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">6시간 24분</td>
         <td class="introitem">l - lll</td>
         <td class="introitem">130%</td>
@@ -18104,7 +18245,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">10</td>
-        <td class="introitem">1,910</td>
+        <td class="introitem">1,830 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">1일 02시간</td>
         <td class="introitem">l - lll</td>
         <td class="introitem">142%</td>
@@ -18416,9 +18557,9 @@ hr {
       </tr>
       <tr>
         <td class="introitem">10</td>
-        <td class="introitem">1,350</td>
+        <td class="introitem">1,220 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">20시간 55분</td>
-        <td class="introitem">l - lll</td>
+        <td class="introitem">l - lll </td>
         <td class="introitem">148%</td>
         <td class="introitem">130%</td>
       </tr>
@@ -18706,7 +18847,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">10</td>
-        <td class="introitem">2,120</td>
+        <td class="introitem">1,910 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">2일 06시간</td>
         <td class="introitem">ll - lV</td>
         <td class="introitem">154%</td>
@@ -18997,7 +19138,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">10</td>
-        <td class="introitem">2,440</td>
+        <td class="introitem">2,330 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">3일 18시간</td>
         <td class="introitem">ll - lV</td>
         <td class="introitem">160%</td>
@@ -19242,7 +19383,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">10</td>
-        <td class="introitem">3,560</td>
+        <td class="introitem">3,370</td>
         <td class="introitem">6일 18시간</td>
         <td class="introitem">lll - V</td>
         <td class="introitem">178%</td>
@@ -19533,7 +19674,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">10</td>
-        <td class="introitem">17,000</td>
+        <td class="introitem">14,340 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">12일</td>
         <td class="introitem">lll - V</td>
         <td class="introitem">184%</td>
@@ -19822,7 +19963,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">10</td>
-        <td class="introitem">2,700</td>
+        <td class="introitem">3,010 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">8일</td>
         <td class="introitem">lV - Vl</td>
         <td class="introitem">200%</td>
@@ -20090,7 +20231,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">10</td>
-        <td class="introitem">3,400</td>
+        <td class="introitem">3,910 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">11일</td>
         <td class="introitem">V - Vl</td>
         <td class="introitem">200%</td>
@@ -20447,7 +20588,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">10</td>
-        <td class="introitem">2,000</td>
+        <td class="introitem">3,000 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">11일</td>
         <td class="introitem">V - Vl</td>
         <td class="introitem">200%</td>
@@ -21031,7 +21172,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">30</td>
-        <td class="introitem">540</td>
+        <td class="introitem">520 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">19분</td>
         <td class="introitem">l - ll</td>
         <td class="introitem">200%</td>
@@ -21320,7 +21461,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">30</td>
-        <td class="introitem">1,010</td>
+        <td class="introitem">990 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">1시간 02분</td>
         <td class="introitem">l - ll</td>
         <td class="introitem">224%</td>
@@ -21696,11 +21837,11 @@ hr {
       </tr>
       <tr>
         <td class="introitem">30</td>
-        <td class="introitem">1,840</td>
+        <td class="introitem">1,700 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">4시간 09분</td>
         <td class="introitem">l - lll</td>
         <td class="introitem">248%</td>
-        <td class="introitem">200%</td>
+        <td class="introitem">180%</td>
       </tr>
     </table>
      <br><br><br><h3 style="margin:auto; font-size:20pt;">------------- 연구 ---------------</h3> <br><br>
@@ -22009,7 +22150,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">30</td>
-        <td class="introitem">1,640</td>
+        <td class="introitem">1,560 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">4시간 09분</td>
         <td class="introitem">l - lll</td>
         <td class="introitem">248%</td>
@@ -22297,7 +22438,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">30</td>
-        <td class="introitem">3,180</td>
+        <td class="introitem">3,120 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">23시간 35분</td>
         <td class="introitem">l - lll</td>
         <td class="introitem">284%</td>
@@ -22655,7 +22796,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">30</td>
-        <td class="introitem">1,420</td>
+        <td class="introitem">1,310 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">14시간 41분</td>
         <td class="introitem">l - lll</td>
         <td class="introitem">296%</td>
@@ -22875,7 +23016,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">30</td>
-        <td class="introitem">2,860</td>
+        <td class="introitem">2,760 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">1일 13시간</td>
         <td class="introitem">l - lV</td>
         <td class="introitem">308%</td>
@@ -23165,7 +23306,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">30</td>
-        <td class="introitem">4,120</td>
+        <td class="introitem">3,960 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">1일 16시간</td>
         <td class="introitem">l - lV</td>
         <td class="introitem">296%</td>
@@ -23455,7 +23596,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">30</td>
-        <td class="introitem">4,450</td>
+        <td class="introitem">4,300</td>
         <td class="introitem">3일 09시간</td>
         <td class="introitem">l - lV</td>
         <td class="introitem">320%</td>
@@ -23485,7 +23626,7 @@ hr {
            <td class="item"><img class="modicon" align="left" src="../modifications/bullet1.svg"></img>기본</td>
            <td class="item"><img class="modicon" align="left" src="../modifications/crew.svg"></img>승무원<br>보충<br><br>300</td>
            <td class="item"></td>
-           <td class="item"></td> 
+           <td class="item"></td>
          </tr>
          <tr>
            <td class="type" colspan="2">주행성능</td>
@@ -23721,7 +23862,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">30</td>
-        <td class="introitem">2,380</td>
+        <td class="introitem">2,350 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">1일 22시간</td>
         <td class="introitem">l - lV</td>
         <td class="introitem">320%</td>
@@ -23749,8 +23890,8 @@ hr {
            <td class="item"><img class="modicon" align="left" src="../modifications/he.svg"></img>J.Gr.38</td>
            <td class="item"><img class="modicon" align="left" src="../modifications/crew.svg"></img>승무원<br>보충<br><br>300</td>
            <td class="item"></td>
-           <td class="item"></td> 
-           <td class="item"></td> 
+           <td class="item"></td>
+           <td class="item"></td>
          </tr>
          <tr>
            <td class="type" colspan="2">주행성능</td>
@@ -23855,7 +23996,7 @@ hr {
          <td class="result">185mm</td>
          <td class="result">185mm</td>
        </tr>
-      
+
       </table>
       <br><br>
        <table id="ammu2">
@@ -23964,7 +24105,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">30</td>
-        <td class="introitem">2,330</td>
+        <td class="introitem">2,130 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">2일 12시간</td>
         <td class="introitem">l - lV</td>
         <td class="introitem">332%</td>
@@ -24231,7 +24372,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">10</td>
-        <td class="introitem">2,760</td>
+        <td class="introitem">2,760 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">3일 19시간</td>
         <td class="introitem">l - V</td>
         <td class="introitem">356%</td>
@@ -24475,7 +24616,7 @@ hr {
   <p>
     <a class="out" href="germanyarmy.html"><img src="../../image/x.png" style="width:50px;"></img></a>
     <br><br><br><br><h3 style="margin:auto; font-size:30pt;">------------- 티거 2 (헨셸) Sla.16 ---------------</h3> <br><br><br>
-    <table id="intro"> 
+    <table id="intro">
       <tr>
         <td class="intromain" rowspan="6"><br>티거 2(헨셸) Sla.16<br>중전차<br>랭크: lV &nbsp; BR: 6.7 <br><br><center>
           <img src="tankimage/tiger2hsla.png" style="width:200px;"></img><br>
@@ -24522,7 +24663,7 @@ hr {
       </tr>
       <tr>
         <td class="introitem">30</td>
-        <td class="introitem">3,090 <img id="silvericon" src="../../image/silver.svg"></td>
+        <td class="introitem">2,970 <img id="silvericon" src="../../image/silver.svg"></td>
         <td class="introitem">4일 12시간</td>
         <td class="introitem">l - V</td>
         <td class="introitem">368%</td>
