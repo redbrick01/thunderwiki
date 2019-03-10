@@ -1,0 +1,33 @@
+<html >
+<head>
+    <title>jQuery Selector</title>
+    <link href="../Styles/Site.css" rel="stylesheet" type="text/css" />    
+    <style>
+        .selected { background:red }
+    </style>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("button#home").each(function () {
+                $(this).click(function () {
+                    $(this).addClass("selected");                      //클릭된 부분을 상단에 정의된 CCS인 selected클래스로 적용
+                    $(this).siblings().removeClass("selected");  //siblings:형제요소들,    removeClass:선택된 클래스의 특성을 없앰
+                });
+            });
+        });
+    </script>
+</head>
+<body style="padding:10px;">
+    <h2>jQuery 시작 Selector</h2>
+    <p>jQuery에 대한 자세한 내용을 보려면 jquery.com 을 방문하세요.</p>
+    <div id="home">
+       
+            <button >list item 1</li>
+            <button id="home">list item 2</li>            
+            <button id="home">list item 3</li>
+       
+    </div>
+</body>
+</html>
+
+

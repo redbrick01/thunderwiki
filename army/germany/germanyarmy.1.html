@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-69166612-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-69166612-2');
+</script>
+
+    <meta charset="utf-8">
+    <title>html</title>
+    <style>
+    body{
+        background-color:#13151c;
+    }
+    h1{
+      font-size: 50px;
+      padding: 15px;
+      margin:0;
+    }
+    nav ul{
+      padding:0px;
+    }
+    nav ul li {
+      display : inline-block;
+    }
+    nav ul li a {
+      text-decoration: none;
+      text-align: center;
+      box-sizing: border-box;
+      width: 200px;
+      padding: 20px;
+      margin: 0px;
+      color: white;
+      border-top: 1px solid white;
+      display : inline-block;
+    }
+    nav ul li a.active {
+      border-top: 3px #F26B0A;
+      color: white;
+    }
+    nav ul li a:hover:not(.active) {
+        border-top: 2px solid #F26B0A;
+      color: #F26B0A;
+    }
+    #now {
+    color:  #F26B0A;
+    border-top: 2px solid #F26B0A;
+    }
+
+    h2 {
+      font-weight: lighter;
+      color: white;
+      text-align: center;
+      margin: auto;
+      width: 70%;
+      font-size: 50px;
+    }
+
+        #groundnav {
+          display: inline;
+          width: 10%;
+        }
+        #groundnav:hover {
+          opacity: 0.5;
+        }
+        #tank {
+          margin: 4%;
+          border: 2px solid rgb(61, 60, 60);
+          padding:0px;
+          width: 90%;
+        }
+        #tank:hover {
+          opacity: 0.8;
+        }
+        hr {
+          width: 70%;
+        }
+        #tree {
+          width: 60%;
+          empty-cells: show;
+        }
+        .empty {
+          margin: 7%;
+          width: 100%;
+          background-color: white;
+        }
+        .tier {
+          width: 100%;
+          text-align: center;
+          vertical-align: middle;
+          font-size: 40px;
+          color: white;
+        }
+        td {
+          padding:5px;
+          width: 12%;
+        }
+    #tree {
+      empty-cells: show;
+    }
+    .empty {
+      margin: 7%;
+      width: 100%;
+      background-color: white;
+    }
+    .tier {
+      width: 100%;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 40px;
+      color: white;
+    }
+    #footer {
+      font-weight: lighter;
+      text-align: center;
+      color: white;
+      font-size: 10px;
+    }
+    h3{
+      font-weight: lighter;
+      text-align: center;
+      color: white;
+      font-size: 20%;
+    }
+#foot {
+  padding: 10px;
+}
+#footerline {
+width:95%;
+}
+#footlogo {
+  display:inline;
+}
+#footerogo {
+  padding: 10px;
+}
+
+#hide {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  padding: 5px;
+  margin: 0px;
+  width: 100%;
+  height: 175%;
+  transition: height 0.2s;
+  display: none;
+
+  z-index: 1
+}
+
+#show {
+  position: relative;
+}
+
+
+#show:hover>#hide
+{
+  display: block;
+  position: absolute;
+  top: -6px;
+  left: -6px;;
+  padding: 6px;
+  margin: 0;
+  background-color: #232323;
+  height: 108px;
+  opacity: 1;
+}
+
+.rightbox {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.rightbox:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.rightbox > div {
+  margin: auto;
+	position: absolute;
+	top: 6%;
+	left: 8%;
+	width: 80%;
+	height: 80%;
+	padding: 16px;
+	border: 16px solid #282c35;
+	background-color: #13151c;
+	overflow: auto;
+}
+
+#modi {
+  margin: auto;
+  color: whote;
+  border: 5px solid white;
+  border-collapse: collapse;
+  width: 90%;
+}
+#modi tr {
+  color: white;
+  border: 2px solid white;
+}
+
+#modi td {
+  color: white;
+  border: 2px solid white;
+}
+
+
+.type {
+  color: white;
+  border: 2px solid white;
+
+  height: 30px;
+  background-color: #282c35;
+  text-align: center;
+  padding: 3px;
+
+}
+
+
+.item{
+  color: white;
+  border: 2px solid white;
+  width: 16%;
+  height: 60px;
+  background-color: #282c35;
+  text-align: right;
+  font-size: 12pt;
+  padding: 7px;
+}
+
+.rank {
+  width: 4%;
+  color: white;
+  border: 2px solid white;
+  background-color: #282c35;
+  text-align: center;
+  font-size: 13pt;
+}
+
+
+#ammu1 {
+  margin: auto;
+  color: white;
+  border: 5px solid white;
+  border-collapse: collapse;
+  width: 90%;
+}
+#ammu1 tr {
+  color: white;
+  border: 2px solid white;
+}
+
+.ammutype {
+  color: white;
+  border: 2px solid white;
+
+  height: 30px;
+  background-color: #3d444f;
+  text-align: center;
+  padding: 3px;
+
+}
+.result {
+  color: white;
+  border: 2px solid white;
+  width: 12%;
+  background-color: #282c35;
+  text-align: center;
+  font-size: 13pt;
+  padding: 7px;
+}
+
+#ammu2 {
+  margin: auto;
+  color: white;
+  border: 5px solid white;
+  border-collapse: collapse;
+  width: 90%;
+}
+#ammu2 tr {
+  color: white;
+  border: 2px solid white;
+}
+
+#ammu2 .ammutype {
+  color: white;
+  border: 2px solid white;
+
+  height: 30px;
+  background-color: #3d444f;
+  text-align: center;
+  padding: 3px;
+
+}
+#ammu2 .result {
+  color: white;
+  border: 2px solid white;
+  width: 9%;
+  background-color: #282c35;
+  text-align: center;
+  font-size: 13pt;
+  padding: 7px;
+}
+
+
+
+#intro {
+  margin: auto;
+  color: white;
+  border: 5px solid white;
+  border-collapse: collapse;
+  width: 90%;
+}
+#intro tr {
+  color: white;
+  border: 2px solid white;
+}
+#intro .intromain {
+  color: white;
+  border: 2px solid white;
+  background-color: #282c35;
+  text-align: center;
+  font-size: 13pt;
+  padding: 7px;
+}
+
+#intro .introtype {
+  color: white;
+  border: 2px solid white;
+
+  height: 30px;
+  background-color: #3d444f;
+  text-align: center;
+  padding: 3px;
+
+}
+#intro .introitem {
+  color: white;
+  border: 2px solid white;
+  width: 12%;
+  background-color: #282c35;
+  text-align: center;
+  font-size: 13pt;
+  padding: 7px;
+}
+
+#armour {
+  margin: auto;
+  color: white;
+  border: 5px solid white;
+  border-collapse: collapse;
+  width: 90%;
+}
+#armour .type {
+  border: 2px solid white;
+  background-color: #3d444f;
+}
+
+.out {
+  margin-top: 1px;
+  margin-right: 30px;
+  bottom: 0;
+  float: right;
+  display: block;
+}
+.out:hover {
+  opacity: 0.5;
+}
+
+.modicon {
+  width: 70px;
+  display: inline;
+
+}
+
+#namu {
+  width:100%;
+  margin: 40px;
+  padding: 2%;
+  background-color: #282c35;
+  border: 4px solid white;
+  text-decoration: none;
+  font-size: 35pt;
+  color: white;
+}
+#namu:hover{
+	background-color: #13151c;
+}
+#thunder {
+  width: 100%;
+  margin: 40px;
+  padding: 2%;
+  background-color: #282c35;
+  border: 4px solid white;
+  text-decoration: none;
+  font-size: 35pt;
+  color: white;
+}
+#thunder:hover{
+	background-color: #13151c;
+}
+
+hr {
+  width: 80%;
+}
+#tree {
+  width: 70%;
+  empty-cells: show;
+  margin: auto;
+}
+#tree td {
+  text-align: center;
+  width: 125px;
+  height:50px;
+  padding: 5px;
+  color: white;
+}
+.tier {
+  width: 16%;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 50px;
+  color: white;
+}
+.tank {
+  background-image: url(icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: none;
+  width: 110px;
+  height:45px;
+  text-align: right;
+  color: white;
+  font-size:  9pt;
+  font-weight: lighter;
+  border: 1px solid grey;
+  line-height:1.6em
+}
+.tank2 {
+  background-image: url(icon2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: none;
+  width: 110px;
+  height:45px;
+  text-align: right;
+  color: white;
+  font-size: 9pt;
+  font-weight: lighter;
+  border: 1px solid grey;
+  line-height:1.6em
+}
+
+.tank:hover {
+  opacity: 0.7;
+  border: 1px solid white;
+}
+.tank2:hover {
+  opacity: 0.7;
+  border: 1px solid white;
+}
+.empty-cells {
+  opacity: 0;
+  width: 110px;
+  height:45px;
+  border: 1px solid grey;
+}
+
+#goldicon1 {
+  vertical-align: middle;
+  width:10px;
+  padding-bottom: 2px;
+}
+#goldicon2 {
+  vertical-align: middle;
+  width:15px;
+  padding-bottom: 3px;
+}#silvericon {
+  vertical-align: middle;
+  width: 15px;
+  padding-bottom: 5px;
+}
+#rpicon {
+  vertical-align: middle;
+  width: 10px;
+  padding-bottom: 5px;
+}
+
+#gamemode1 {
+  margin: auto;
+}
+#gamemode1 .ab {
+  width:20%;
+  height: 50px;
+  font-size: 20pt;
+  border: 0px;
+}
+#gamemode1 .ab:hover {
+  width:20%;
+  height: 50px;
+  font-size: 20pt;
+  border: 0px;
+  color:white;
+  background-color: #282c35;
+}
+#gamemode1 .rb {
+  width:20%;
+  height: 50px;
+  font-size: 20pt;
+  border: 0px;
+}
+#gamemode1 .rb:hover {
+  width:20%;
+  height: 50px;
+  font-size: 20pt;
+  border: 0px;
+  color:white;
+  background-color:#282c35;
+}
+#gamemode1 .sb {
+  width:20%;
+  height: 50px;
+  font-size: 20pt;
+  border: 0px;
+}
+#gamemode1 .sb:hover {
+  width:20%;
+  height: 50px;
+  font-size: 20pt;
+  border: 0px;
+  color:White;
+  background-color: #282c35;
+}
+button {
+  outline-style:none;
+}
+.selected { 
+  color:white;
+  background-color: #282c35;
+  }
+
+  .selected2 { 
+  color:white;
+  background-color: #282c35;
+  }
+#mode2 {
+  margin: auto;
+  width: 90%;
+}
+#gamemodebutton {
+  width:33%;
+  height: 50px;
+  font-size: 20pt;
+  border: 0px;
+  padding: 0px;
+}
+#gamemodebutton:hover {
+  width:33%;
+  height: 50px;
+  font-size: 20pt;
+  border: 0px;
+  padding: 0px;
+  color:White;
+  background-color: #282c35;
+}
+.shelldegree1 {
+  width:100%;
+  height:100%;
+  margin:0px;
+  border:0px;
+  padding:0px;
+  font-size: 10pt;
+  color:white;
+  background-color:  #3d444f;
+}
+.shelldegree1:hover {
+  font-size: 10pt;
+  color:White;
+  background-color: #282c35;
+}
+.selected3 { 
+  color:white;
+  background-color: #282c35;
+  }
+
+#dkdk {
+  margin: auto;
+    width: 90%; 
+  }
+    </style>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("button#gamemode1").each(function () {
+            $(this).click(function () {
+                $(this).addClass("selected");                      //클릭된 부분을 상단에 정의된 CCS인 selected클래스로 적용
+                $(this).siblings().removeClass("selected");  //siblings:형제요소들,    removeClass:선택된 클래스의 특성을 없앰
+            });
+        });
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+        $("button#gamemodebutton").each(function () {
+            $(this).click(function () {
+                $(this).addClass("selected2");                      //클릭된 부분을 상단에 정의된 CCS인 selected클래스로 적용
+                $(this).siblings().removeClass("selected2");  //siblings:형제요소들,    removeClass:선택된 클래스의 특성을 없앰
+            });
+        });
+    });
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+      $("button#shelldegree").each(function () {
+          $(this).click(function () {
+              $(this).addClass("selected3");                      //클릭된 부분을 상단에 정의된 CCS인 selected클래스로 적용
+              $(this).siblings().removeClass("selected3");  //siblings:형제요소들,    removeClass:선택된 클래스의 특성을 없앰
+          });
+      });
+  });
+</script>
+  </head>
+  <body>
+    <header>
+    <h1><center><a href="home.html"><img src="../../image/wtlogo.png" style="padding:100px;"width="300px"></a></h1>
+    <nav>
+      <center>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="news.html">News / Dev</a></li>
+        <li><a href="aviation.html">Aviation</a></li>
+        <li><a id="now" href="ground.html">Ground</a></li>
+        <li><a href="fleet.html">Fleet</a></li>
+      </ul>
+   </nav>
+ </header>
+ <br>
+ <br>
+  <div id="groundnav">
+    <center>
+      <a href="usaarmy.html"><img id="groundnav" src="../armynav/usaarmy.jpg"></a>
+      <a href="ussrarmy.html"><img id="groundnav" src="../armynav/ussrarmy.jpg"></a>
+      <a href="germanyarmy.html"><img id="groundnav" src="../armynav/germanyarmy.jpg"></a>
+      <a href="britainarmy.html"><img id="groundnav" src="../armynav/britainarmy.jpg"></a>
+      <a href="japanarmy.html"><img id="groundnav" src="../armynav/japanarmy.jpg"></a>
+      <a href="italyarmy.html"><img id="groundnav" src="../armynav/italyarmy.jpg"></a>
+      <a href="francearmy.html"><img id="groundnav" src="../armynav/francearmy.jpg"></a>
+  </div>
+ 
+<div id="dkdk">
+    <div id="Sd.Kfz.221">
+        <div>
+            <p>
+              <br><br><br><br><h3 style="margin:auto; font-size:30pt;">------------- Sd.Kfz.221 (s.Pz.B.41) ---------------</h3> <br><br><br>
+              <center>
+                 <div id="mode2">
+                     <button id="gamemodebutton" onclick="
+                       document.getElementById('turretspeed').innerHTML = '33.3°/초';
+                       document.getElementById('engine').innerHTML = '116hp/2,600rpm';
+                       document.getElementById('maxspeed').innerHTML = '80km/h';
+                       document.getElementById('repaircost').innerHTML = '200';
+                       document.getElementById('repairtime').innerHTML = '12분';
+                       document.getElementById('rpreward').innerHTML = '30%';
+                     ">AB</button>
+                     <button id="gamemodebutton" onclick="
+                       document.getElementById('turretspeed').innerHTML = '20.8°/초';
+                       document.getElementById('engine').innerHTML = '66hp/2,600rpm';
+                       document.getElementById('maxspeed').innerHTML = '72km/h';
+                       document.getElementById('repaircost').innerHTML = '290';
+                       document.getElementById('repairtime').innerHTML = '25분';
+                       document.getElementById('rpreward').innerHTML = '30%';
+                     ">RB</button>
+                     <button id="gamemodebutton" onclick="
+                       document.getElementById('turretspeed').innerHTML = '20.8°/초';
+                       document.getElementById('engine').innerHTML = '66hp/2,600rpm';
+                       document.getElementById('maxspeed').innerHTML = '72km/h';
+                       document.getElementById('repaircost').innerHTML = '310';
+                       document.getElementById('repairtime').innerHTML = '24분';
+                       document.getElementById('rpreward').innerHTML = '50%';
+                     ">SB</button>
+                  </div> 
+                 </center><br><br><br>
+</center><br><br><br>
+<table id="intro">
+  <tr>
+    <td class="intromain" rowspan="6"><br>Sd.Kfz.221<br>경전차<br>랭크: l &nbsp; BR: 1.3 <br><br><center>
+      <img src="tankimage/sdkfz221.png" style="width:200px;"></img><br>
+      <br>28/20mm s.Pz.B.41 ( 60 )<br><br>
+    </td>
+    <td class="introtype">포탑회전속도</td>
+    <td class="introtype">고저각</td>
+    <td class="introtype">재장전 시간</td>
+    <td class="introtype">승무원</td>
+    <td class="introtype">중량</td>
+    <td class="introtype">엔진출력</td>
+  </tr>
+  <tr>
+    <td class="introitem" id="turretspeed">20.8°/초</td>
+    <td class="introitem">-10/20°</td>
+    <td class="introitem">3.9초</td>
+    <td class="introitem">2</td>
+    <td class="introitem">4.0t</td>
+    <td class="introitem" id="engine">66hp/2,600rpm</td>
+  </tr>
+  <tr>
+    <td class="introtype">최고속도</td>
+    <td class="introtype">시인성</td>
+    <td class="introtype">필요 RP</td>
+    <td class="introtype">"이전장비" 효율</td>
+    <td class="introtype">가격</td>
+    <td class="introtype">전환 훈련비용</td>
+  </tr>
+  <tr>
+    <td class="introitem"  id="maxspeed">72km/h</td>
+    <td class="introitem">107%</td>
+    <td class="introitem"style="color:#F26B0A;">4,000 <img id="rpicon" src="../../image/rp.svg"></td>
+    <td class="introitem">-</td>
+    <td class="introitem" style="color:#F26B0A;">2,100 <img id="silvericon" src="../../image/silver.svg"></td>
+    <td class="introitem">600 <img id="silvericon" src="../../image/silver.svg"></td>
+  </tr>
+  <tr>
+    <td class="introtype">무료수리 횟수</td>
+    <td class="introtype">최대 수리비</td>
+    <td class="introtype">무료 수리 시간</td>
+    <td class="introtype">최대 연구효율</td>
+    <td class="introtype">보상 <img id="rpicon" src="../../image/rp.svg"></td>
+    <td class="introtype">보상 <img id="silvericon" src="../../image/silver.svg"></td>
+  </tr>
+  <tr>
+    <td class="introitem">10</td>
+    <td class="introitem"><span id="repaircost">290</span> <img id="silvericon" src="../../image/silver.svg"></td>
+    <td class="introitem"  id="repairtime">25분</td>
+    <td class="introitem">l - ll</td>
+    <td class="introitem">100%</td>
+    <td class="introitem"  id="rpreward">30%</td>
+  </tr>
+</table>
+ <br><br><br><h3 style="margin:auto; font-size:20pt;">------------- 연구 ---------------</h3> <br><br>
+   <table id="modi">
+     <tr>
+       <td class="rank" rowspan="4"></td>
+       <td class="item"><img class="modicon" align="left" src="../modifications/tankicon.svg">Sd.Kfz.221<br><br><br>1.3</td>
+       <td class="item"><img class="modicon" align="left" src="../modifications/backup.svg">예비장비<br><br><br>10 <img id="goldicon2" src="../../image/gold.svg"></td>
+       <td class="item"><img class="modicon" align="left" src="../modifications/talisman.svg">부적<br><br><br> <img id="goldicon2" src="../../image/gold.svg"></td>
+       <td class="item"></td>
+       <td class="item"></td>
+       <td class="item"></td>
+     </tr>
+     <tr>
+       <td class="type">주무장</td>
+       <td class="type">20mm 포</td>
+       <td class="type" colspan="4">소모품</td>
+     </tr>
+     <tr>
+       <td class="item"><img class="modicon" align="left" src="../modifications//cannon2.svg"></img>포 x1<br><br></td>
+       <td class="item"><img class="modicon" align="left" src="../modifications/apcr.svg"></img>2.8/2cm<br>Pzgr.41</td>
+       <td class="item"><img class="modicon" align="left" src="../modifications/crew.svg"></img>승무원<br>보충<br><br>100 <img id="silvericon" src="../../image/silver.svg"></td>
+       <td class="item"></td>
+       <td class="item"></td>
+       <td class="item"></td>
+     </tr>
+     <tr>
+       <td class="type" colspan="2">주행성능</td>
+       <td class="type">방호력</td>
+       <td class="type" colspan="3">화력</td>
+     </tr>
+     <tr>
+       <td class="rank">l</td>
+       <td class="item"><img class="modicon" align="left" src="../modifications/tracks.svg"></img>타이어<br><br><br>300 <img id="rpicon" src="../../image/rp.svg"></td>
+       <td class="item"></td>
+       <td class="item"><img class="modicon" align="left" src="../modifications/parts.svg"></img>수리부속<br> 및 공구<br><br>300 <img id="rpicon" src="../../image/rp.svg"></td>
+       <td class="item"><img class="modicon" align="left" src="../modifications/horizontaldrive.svg"></img>선회장치<br><br><br>300 <img id="rpicon" src="../../image/rp.svg"></td>
+       <td class="item"></td>
+       <td class="item"></td>
+     </tr>
+     <tr>
+       <td class="rank">ll</td>
+       <td class="item"><img class="modicon" align="left" src="../modifications/suspension2.svg"></img>현수장치<br><br><br>250 <img id="rpicon" src="../../image/rp.svg"></td>
+       <td class="item"><img class="modicon" align="left" src="../modifications/brake.svg"></img>제동계통<br><br><br>250 <img id="rpicon" src="../../image/rp.svg"></td>
+       <td class="item"><img class="modicon" align="left" src="../modifications/fpe.svg"></img>소화기<br><br><br>250 <img id="rpicon" src="../../image/rp.svg"></td>
+       <td class="item"><img class="modicon" align="left" src="../modifications/cannon.svg"></img>영점조절<br><br><br>250 <img id="rpicon" src="../../image/rp.svg"></td>
+       <td class="item"></td>
+       <td class="item"></td>
+     </tr>
+     <tr>
+       <td class="rank">lll</td>
+       <td class="item"><img class="modicon" align="left" src="../modifications/filters.svg"></img>여과기<br><br><br>370 <img id="rpicon" src="../../image/rp.svg"></td>
+       <td class="item"></td>
+       <td class="item"><img class="modicon" align="left" src="../modifications/crew.svg"></img>승무원<br>보충<br><br>370 <img id="rpicon" src="../../image/rp.svg"></td>
+       <td class="item"><img class="modicon" align="left" src="../modifications/elevation.svg"></img>고저장치<br><br><br>370 <img id="rpicon" src="../../image/rp.svg"></td>
+       <td class="item"></td>
+       <td class="item"></td>
+     </tr>
+     <tr>
+       <td class="rank">lV</td>
+       <td class="item"><img class="modicon" align="left" src="../modifications/transmission.svg"></img>변속기<br><br><br>480 <img id="rpicon" src="../../image/rp.svg"></td>
+       <td class="item"><img class="modicon" align="left" src="../modifications/engine.svg"></img>엔진<br><br><br>480 <img id="rpicon" src="../../image/rp.svg"></td>
+       <td class="item"></td>
+       <td class="item"><img class="modicon" align="left" src="../modifications/artillery.svg"></img>포격지원<br><br><br>480 <img id="rpicon" src="../../image/rp.svg"></td>
+       <td class="item"></td>
+       <td class="item"></td>
+     </tr>
+   </table>
+   <br><br><br><h3 style="margin:auto; font-size:20pt;">------------- 장갑 ---------------</h3> <br><br>
+   <table id="armour">
+     <tr>
+       <td></td>
+       <td class="type">정면</td>
+       <td class="type">측면</td>
+       <td class="type">후면</td>
+       <td class="type">상부</td>
+     </tr>
+     <tr>
+       <td class="result">차체</td>
+       <td class="result">14mm</td>
+       <td class="result">8mm</td>
+       <td class="result">8mm</td>
+       <td class="result">8mm</td>
+     </tr>
+     <tr>
+       <td class="result">포탑</td>
+       <td class="result">7mm</td>
+       <td class="result">8mm</td>
+       <td class="result">8mm</td>
+       <td class="result">N/A</td>
+     </tr>
+   </table>
+   <br><br><br><h3 style="margin:auto; font-size:20pt;">------------- 포탄 ---------------</h3> <br><br>
+   <table id="ammu1">
+     <tr>
+       <td class="type" colspan="8" style="background-color:#282c35;">관통력</td>
+     </tr>
+     <tr>
+       <td class="ammutype" rowspan="2">이름</td>
+       <td class="ammutype" rowspan="2">탄종</td>
+       <td class="ammutype" colspan="2"><button id="shelldegree" class="shelldegree1" onclick="
+       document.getElementById('10m').innerHTML = '95mm';
+       document.getElementById('100m').innerHTML = '94mm';
+       document.getElementById('500m').innerHTML = '66mm';
+       document.getElementById('1000m').innerHTML = '38mm';
+       document.getElementById('1500m').innerHTML = '15mm';
+       document.getElementById('2000m').innerHTML = '8mm';
+       ">0°</button></td>
+       <td class="ammutype" colspan="2"><button id="shelldegree" class="shelldegree1" onclick="
+       document.getElementById('10m').innerHTML = '73mm';
+       document.getElementById('100m').innerHTML = '72mm';
+       document.getElementById('500m').innerHTML = '50mm';
+       document.getElementById('1000m').innerHTML = '29mm';
+       document.getElementById('1500m').innerHTML = '11mm';
+       document.getElementById('2000m').innerHTML = '6mm';
+       ">30°</button></td>
+       <td class="ammutype" colspan="2"><button id="shelldegree" class="shelldegree1" onclick="
+       document.getElementById('10m').innerHTML = '22mm';
+       document.getElementById('100m').innerHTML = '21mm';
+       document.getElementById('500m').innerHTML = '15mm';
+       document.getElementById('1000m').innerHTML = '8mm';
+       document.getElementById('1500m').innerHTML = '3mm';
+       document.getElementById('2000m').innerHTML = '1mm';
+       ">60°</button></td>
+     </tr>
+       <td class="ammutype">10m</td>
+       <td class="ammutype">100m</td>
+       <td class="ammutype">500m</td>
+       <td class="ammutype">1000m</td>
+       <td class="ammutype">1500m</td>
+       <td class="ammutype">2000m</td>
+     </tr>
+     </tr>
+       <td class="result">2.8/2cm Pzgr.41</td>
+       <td class="result">APCR</td>
+       <td class="result" id="10m">95mm</td>
+       <td class="result" id="100m">94mm</td>
+       <td class="result" id="500m">66mm</td>
+       <td class="result" id="1000m">38mm</td>
+       <td class="result" id="1500m">15mm</td>
+       <td class="result" id="2000m">8mm</td>
+     </tr>
+   </table>
+   <br><br>
+   <table id="ammu2">
+     <tr>
+       <td class="type" colspan="11" style="background-color:#282c35;">세부사항</td>
+     </tr>
+     <tr>
+       <td class="ammutype" rowspan="2">이름</td>
+       <td class="ammutype" rowspan="2">종류</td>
+       <td class="ammutype" rowspan="2">가격</td>
+       <td class="ammutype" rowspan="2">탄체중량(kg)</td>
+       <td class="ammutype" rowspan="2">포구초속(m/s)</td>
+       <td class="ammutype" rowspan="2">폭약종류</td>
+       <td class="ammutype" rowspan="2">폭약질량(g)</td>
+       <td class="ammutype" rowspan="2">TNT당량(g)</td>
+       <td class="ammutype" colspan="3">도탄확률-착탄각</td>
+     </tr>
+     <tr>
+       <td class="ammutype" >0%</td>
+       <td class="ammutype" >50%</td>
+       <td class="ammutype" >100%</td>
+     </tr>
+     <tr>
+       <td class="result">2.8/2cm Pzgr.41</td>
+       <td class="result">APCR</td>
+       <td class="result">-</td>
+       <td class="result">0.14</td>
+       <td class="result">1,400</td>
+       <td class="result">-</td>
+       <td class="result">-</td>
+       <td class="result">-</td>
+       <td class="result">66°</td>
+       <td class="result">70°</td>
+       <td class="result">72°</td>
+     </tr>
+   </table>
+ </p><br><br><br>
+ <div><center>
+ <a id="namu" href="https://namu.wiki/w/%EC%9B%8C%20%EC%8D%AC%EB%8D%94/%EC%A7%80%EC%83%81%20%EB%B3%91%EA%B8%B0/%EB%8F%85%EC%9D%BC%20%ED%8A%B8%EB%A6%AC/%EA%B0%9C%EB%B0%A9%ED%98%95%20%EC%9E%90%EC%A3%BC%ED%8F%AC#s-2.1"> 나무위키 바로가기</a>
+ <a id="thunder" href="https://wiki.warthunder.com/Sd.Kfz.221_(s.Pz.B.41)">공식 위키 바로가기</a>
+</div><br><br><br>
+</div>
+</div>
+</div>
+ <br><br><br><br>
+    <hr id="footerline">
+    <br><br><br><br>
+      <center>
+        <div id="footlogo">
+            <img id="footerogo" width="" height="30px" src="../../footer/gaijin.svg">
+            <img id="footerogo" width="" height="20px" src="../../footer/ps4.svg">
+            <img id="footerogo" width="" height="20px" src="../../footer/xbox.svg">
+            <img id="footerogo" width="" height="20px" src="../../footer/windows.svg">
+            <img id="footerogo" width="" height="20px" src="../../footer/steam.svg">
+            <img id="footerogo" width="" height="30px" src="../../footer/mac.svg">
+            <img id="footerogo" width="" height="30px" src="../../footer/oculus.svg">
+            <img id="footerogo" width="" height="30px" src="../../footer/vive.svg">
+        </div>
+    <br>
+    <p id="footer">
+    DEPICTION OF ANY REAL-WORLD WEAPON OR VEHICLE IN THIS GAME DOES NOT MEAN PARTICIPATION IN GAME DEVELOPMENT, SPONSORSHIP OR ENDORSEMENT BY ANY WEAPON OR VEHICLE MANUFACTURER.<br><br>
+    © 2009—2019 by Gaijin Network Ltd. Gaijin and War Thunder are trademarks and/or registered trademarks of Gaijin Network Ltd. or its licensors, all other logos are trademarks of their respective owners. F-84 Thunderjet, XF5F-1 Skyrocket,<br>
+    XP-50, F4F-3 Wildcat, F4F-4 Wildcat, F4U-1A Corsair, F4U-1B Corsair, F4U-1C Corsair, F6F-3 Hellcat, F7F-1 Tigercat, F8F-1 Bearcat, F8F-1B Bearcat, F9F-2 Panther, F9F-5 Panther, OS2U-1 Kingfisher, OS2U-3 Kingfisher, F3F, P-61 Black Widow<br>
+    ,P-47D-25 Thunderbolt, P-47D-27 Thunderbolt, P-47M-1-RE Thunderbolt, P-47N-15 Thunderbolt and P-47D-28 Thunderbolt are trademarks of Northrop Grumman Systems Corporation and are used under license to Gaijin Network Ltd.CONSOLIDATED B-24<br>
+    LIBERATOR, CONSOLIDATED PBY CATALINA, LOCKHEED P-38 LIGHTNING , LOCKHEED F-80 SHOOTING STAR, MARTIN B-57 CANBERRA, associated emblems and logos, and body designs of vehicles are either registered trademarks or trademarks of Lockheed Martin<br>
+    Corporation in the USA and/or other jurisdictions, used under license by Gaijin Network Ltd. P-39 and P-63 emblems, logos, and body designs are trademarks of Textron Innovations Inc. and are used under license by Gaijin Network Ltd.
+    <br><br>
+    Privacy Policy    Terms of Use    EULA Customer Support    Site rules    Game rule
+    </p>
+
+
+  </body>
+</html>
