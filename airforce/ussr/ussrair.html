@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-69166612-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-69166612-2');
+</script>
+
+    <meta charset="utf-8">
+    <title>html</title>
+    <style>
+    body{
+        background-color:#13151c;
+    }
+    h1{
+      font-size: 50px;
+      padding: 15px;
+      margin:0;
+    }
+    nav ul{
+      padding:0px;
+    }
+    nav ul li {
+      display : inline-block;
+    }
+    nav ul li a {
+      text-decoration: none;
+      text-align: center;
+      box-sizing: border-box;
+      width: 200px;
+      padding: 20px;
+      margin: 0px;
+      color: white;
+      border-top: 1px solid white;
+      display : inline-block;
+    }
+    nav ul li a.active {
+      border-top: 3px #F26B0A;
+      color: white;
+    }
+    nav ul li a:hover:not(.active) {
+        border-top: 2px solid #F26B0A;
+      color: #F26B0A;
+    }
+    #now {
+    color:  #F26B0A;
+    border-top: 2px solid #F26B0A;
+    }
+
+    h2 {
+      font-weight: lighter;
+      color: white;
+      text-align: center;
+      margin: auto;
+      width: 70%;
+      font-size: 50px;
+    }
+
+        #groundnav {
+          display: inline;
+          width: 10%;
+        }
+        #groundnav:hover {
+          opacity: 0.5;
+        }
+        #tank {
+          margin: 4%;
+          border: 2px solid rgb(61, 60, 60);
+          padding:0px;
+          width: 90%;
+        }
+        #tank:hover {
+          opacity: 0.8;
+        }
+        hr {
+          width: 70%;
+        }
+        #tree {
+          width: 60%;
+          empty-cells: show;
+        }
+        .empty {
+          margin: 7%;
+          width: 100%;
+          background-color: white;
+        }
+        .tier {
+          width: 100%;
+          text-align: center;
+          vertical-align: middle;
+          font-size: 40px;
+          color: white;
+        }
+        td {
+          padding:5px;
+          width: 12%;
+        }
+    #tree {
+      empty-cells: show;
+    }
+    .empty {
+      margin: 7%;
+      width: 100%;
+      background-color: white;
+    }
+    .tier {
+      width: 100%;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 40px;
+      color: white;
+    }
+    #footer {
+      font-weight: lighter;
+      text-align: center;
+      color: white;
+      font-size: 10px;
+    }
+    h3{
+      font-weight: lighter;
+      text-align: center;
+      color: white;
+      font-size: 20%;
+    }
+#foot {
+  padding: 10px;
+}
+#footerline {
+width:95%;
+}
+#footlogo {
+  display:inline;
+}
+#footerogo {
+  padding: 10px;
+}
+
+#hide {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  padding: 5px;
+  margin: 0px;
+  width: 100%;
+  height: 175%;
+  transition: height 0.2s;
+  display: none;
+
+  z-index: 1
+}
+#show {
+  position: relative;
+}
+#show:hover>#hide
+{
+  display: block;
+  position: absolute;
+  top: -6px;
+  left: -6px;;
+  padding: 6px;
+  margin: 0;
+  background-color: #232323;
+  height: 108px;
+  opacity: 1;
+}
+
+
+#hide-3 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  padding: 5px;
+  margin: 0px;
+  width: 100%;
+  height: 175%;
+  transition: height 0.2s;
+  display: none;
+
+  z-index: 1
+}
+#show-3 {
+  position: relative;
+}
+#show-3:hover>#hide-3
+{
+  display: block;
+  position: absolute;
+  top: -6px;
+  left: -6px;;
+  padding: 6px;
+  margin: 0;
+  background-color: #232323;
+  height: 172px;
+  opacity: 1;
+}
+
+#hide-4 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  padding: 5px;
+  margin: 0px;
+  width: 100%;
+  height: 175%;
+  transition: height 0.2s;
+  display: none;
+
+  z-index: 1
+}
+#show-4 {
+  position: relative;
+}
+#show-4:hover>#hide-4
+{
+  display: block;
+  position: absolute;
+  top: -6px;
+  left: -6px;;
+  padding: 6px;
+  margin: 0;
+  background-color: #232323;
+  height: 237px;
+  opacity: 1;
+}
+
+#hide-5 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  padding: 5px;
+  margin: 0px;
+  width: 100%;
+  height: 175%;
+  transition: height 0.2s;
+  display: none;
+
+  z-index: 1
+}
+#show-5 {
+  position: relative;
+}
+#show-5:hover>#hide-5
+{
+  display: block;
+  position: absolute;
+  top: -6px;
+  left: -6px;;
+  padding: 6px;
+  margin: 0;
+  background-color: #232323;
+  height: 300px;
+  opacity: 1;
+}
+
+#hide-6 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  padding: 5px;
+  margin: 0px;
+  width: 100%;
+  height: 175%;
+  transition: height 0.2s;
+  display: none;
+
+  z-index: 1
+}
+#show-6 {
+  position: relative;
+}
+#show-6:hover>#hide-6
+{
+  display: block;
+  position: absolute;
+  top: -6px;
+  left: -6px;;
+  padding: 6px;
+  margin: 0;
+  background-color: #232323;
+  height: 365px;
+  opacity: 1;
+}
+
+
+.rightbox {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.rightbox:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.rightbox > div {
+  margin: auto;
+	position: absolute;
+	top: 6%;
+	left: 8%;
+	width: 80%;
+	height: 80%;
+	padding: 16px;
+	border: 16px solid #282c35;
+	background-color: #13151c;
+	overflow: auto;
+}
+
+#modi {
+  margin: auto;
+  color: whote;
+  border: 5px solid white;
+  border-collapse: collapse;
+  width: 90%;
+}
+#modi tr {
+  color: white;
+  border: 2px solid white;
+}
+
+#modi td {
+  color: white;
+  border: 2px solid white;
+}
+
+
+.type {
+  color: white;
+  border: 2px solid white;
+
+  height: 30px;
+  background-color: #282c35;
+  text-align: center;
+  padding: 3px;
+
+}
+
+
+.item{
+  color: white;
+  border: 2px solid white;
+  width: 16%;
+  height: 60px;
+  background-color: #282c35;
+  text-align: right;
+  font-size: 12pt;
+  padding: 7px;
+}
+
+.rank {
+  width: 4%;
+  color: white;
+  border: 2px solid white;
+  background-color: #282c35;
+  text-align: center;
+  font-size: 13pt;
+}
+
+
+#ammu1 {
+  margin: auto;
+  color: white;
+  border: 5px solid white;
+  border-collapse: collapse;
+  width: 90%;
+}
+#ammu1 tr {
+  color: white;
+  border: 2px solid white;
+}
+
+.ammutype {
+  color: white;
+  border: 2px solid white;
+
+  height: 30px;
+  background-color: #3d444f;
+  text-align: center;
+  padding: 3px;
+
+}
+.result {
+  color: white;
+  border: 2px solid white;
+  width: 12%;
+  background-color: #282c35;
+  text-align: center;
+  font-size: 13pt;
+  padding: 7px;
+}
+
+#ammu2 {
+  margin: auto;
+  color: white;
+  border: 5px solid white;
+  border-collapse: collapse;
+  width: 90%;
+}
+#ammu2 tr {
+  color: white;
+  border: 2px solid white;
+}
+
+#ammu2 .ammutype {
+  color: white;
+  border: 2px solid white;
+
+  height: 30px;
+  background-color: #3d444f;
+  text-align: center;
+  padding: 3px;
+
+}
+#ammu2 .result {
+  color: white;
+  border: 2px solid white;
+  width: 9%;
+  background-color: #282c35;
+  text-align: center;
+  font-size: 13pt;
+  padding: 7px;
+}
+
+
+
+#intro {
+  margin: auto;
+  color: white;
+  border: 5px solid white;
+  border-collapse: collapse;
+  width: 90%;
+}
+#intro tr {
+  color: white;
+  border: 2px solid white;
+}
+#intro .intromain {
+  color: white;
+  border: 2px solid white;
+  background-color: #282c35;
+  text-align: center;
+  font-size: 13pt;
+  padding: 7px;
+}
+
+#intro .introtype {
+  color: white;
+  border: 2px solid white;
+
+  height: 30px;
+  background-color: #3d444f;
+  text-align: center;
+  padding: 3px;
+
+}
+#intro .introitem {
+  color: white;
+  border: 2px solid white;
+  width: 12%;
+  background-color: #282c35;
+  text-align: center;
+  font-size: 13pt;
+  padding: 7px;
+}
+
+#armour {
+  margin: auto;
+  color: white;
+  border: 5px solid white;
+  border-collapse: collapse;
+  width: 90%;
+}
+#armour .type {
+  border: 2px solid white;
+  background-color: #3d444f;
+}
+
+.out {
+  margin-top: 1px;
+  margin-right: 30px;
+  bottom: 0;
+  float: right;
+  display: block;
+}
+.out:hover {
+  opacity: 0.5;
+}
+
+.modicon {
+  width: 70px;
+  display: inline;
+
+}
+
+#namu {
+  width:100%;
+  margin: 40px;
+  padding: 2%;
+  background-color: #282c35;
+  border: 4px solid white;
+  text-decoration: none;
+  font-size: 35pt;
+  color: white;
+}
+#namu:hover{
+	background-color: #13151c;
+}
+#thunder {
+  width: 100%;
+  margin: 40px;
+  padding: 2%;
+  background-color: #282c35;
+  border: 4px solid white;
+  text-decoration: none;
+  font-size: 35pt;
+  color: white;
+}
+#thunder:hover{
+	background-color: #13151c;
+}
+
+hr {
+  width: 80%;
+}
+#tree {
+  width: 70%;
+  empty-cells: show;
+  margin: auto;
+}
+#tree td {
+  text-align: center;
+  width: 125px;
+  height:50px;
+  padding: 5px;
+  color: white;
+}
+.tier {
+  width: 16%;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 50px;
+  color: white;
+}
+.tank {
+  background-image: url(icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: none;
+  width: 110px;
+  height:45px;
+  text-align: right;
+  color: white;
+  font-size:  9pt;
+  font-weight: lighter;
+  border: 1px solid grey;
+  line-height:1.6em
+}
+.tank2 {
+  background-image: url(icon2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: none;
+  width: 110px;
+  height:45px;
+  text-align: right;
+  color: white;
+  font-size: 9pt;
+  font-weight: lighter;
+  border: 1px solid grey;
+  line-height:1.6em
+}
+
+.tank:hover {
+  opacity: 0.7;
+  border: 1px solid white;
+}
+.tank2:hover {
+  opacity: 0.7;
+  border: 1px solid white;
+}
+.empty-cells {
+  opacity: 0;
+  width: 110px;
+  height:45px;
+  border: 1px solid grey;
+}
+
+#goldicon1 {
+  vertical-align: middle;
+  width:10px;
+  padding-bottom: 2px;
+}
+#goldicon2 {
+  vertical-align: middle;
+  width:15px;
+  padding-bottom: 3px;
+}#silvericon {
+  vertical-align: middle;
+  width: 15px;
+  padding-bottom: 5px;
+}
+#rpicon {
+  vertical-align: middle;
+  width: 10px;
+  padding-bottom: 5px;
+}
+
+#gamemode1 {
+  margin: auto;
+}
+#gamemode1 .ab {
+  width:20%;
+  height: 50px;
+  font-size: 20pt;
+  border: 0px;
+}
+#gamemode1 .ab:hover {
+  width:20%;
+  height: 50px;
+  font-size: 20pt;
+  border: 0px;
+  color:white;
+  background-color: #282c35;
+}
+#gamemode1 .rb {
+  width:20%;
+  height: 50px;
+  font-size: 20pt;
+  border: 0px;
+}
+#gamemode1 .rb:hover {
+  width:20%;
+  height: 50px;
+  font-size: 20pt;
+  border: 0px;
+  color:white;
+  background-color:#282c35;
+}
+#gamemode1 .sb {
+  width:20%;
+  height: 50px;
+  font-size: 20pt;
+  border: 0px;
+}
+#gamemode1 .sb:hover {
+  width:20%;
+  height: 50px;
+  font-size: 20pt;
+  border: 0px;
+  color:White;
+  background-color: #282c35;
+}
+button {
+  outline-style:none;
+}
+.selected { 
+  color:white;
+  background-color: #282c35;
+  }
+
+  .selected2 { 
+  color:white;
+  background-color: #282c35;
+  }
+#mode2 {
+  margin: auto;
+  width: 90%;
+}
+#gamemodebutton {
+  width:33%;
+  height: 50px;
+  font-size: 20pt;
+  border: 0px;
+  padding: 0px;
+}
+#gamemodebutton:hover {
+  width:33%;
+  height: 50px;
+  font-size: 20pt;
+  border: 0px;
+  padding: 0px;
+  color:White;
+  background-color: #282c35;
+}
+.shelldegree1 {
+  width:100%;
+  height:100%;
+  margin:0px;
+  border:0px;
+  padding:0px;
+  font-size: 10pt;
+  color:white;
+  background-color:  #3d444f;
+}
+.shelldegree1:hover {
+  font-size: 10pt;
+  color:White;
+  background-color: #282c35;
+}
+.selected3 { 
+  color:white;
+  background-color: #282c35;
+  }
+    </style>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("button#gamemode1").each(function () {
+            $(this).click(function () {
+                $(this).addClass("selected");                      //클릭된 부분을 상단에 정의된 CCS인 selected클래스로 적용
+                $(this).siblings().removeClass("selected");  //siblings:형제요소들,    removeClass:선택된 클래스의 특성을 없앰
+            });
+        });
+    });
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+        $("button#gamemodebutton").each(function () {
+            $(this).click(function () {
+                $(this).addClass("selected2");                      //클릭된 부분을 상단에 정의된 CCS인 selected클래스로 적용
+                $(this).siblings().removeClass("selected2");  //siblings:형제요소들,    removeClass:선택된 클래스의 특성을 없앰
+            });
+        });
+    });
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+      $("button#shelldegree").each(function () {
+          $(this).click(function () {
+              $(this).addClass("selected3");                      //클릭된 부분을 상단에 정의된 CCS인 selected클래스로 적용
+              $(this).siblings().removeClass("selected3");  //siblings:형제요소들,    removeClass:선택된 클래스의 특성을 없앰
+          });
+      });
+  });
+</script>
+
+  </head>
+  <body>
+    <header>
+    <h1><center><a href="home.html"><img src="../../image/wtlogo.png" style="padding:100px;"width="300px"></a></h1>
+    <nav>
+      <center>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="news.html">News / Dev</a></li>
+        <li><a  id="now"  href="../index/airindex.html">Aviation</a></li>
+        <li><a href="../../army/index/armyindex.html">Ground</a></li>
+        <li><a href="fleet.html">Fleet</a></li>
+      </ul>
+   </nav>
+ </header>
+ <br>
+ <br>
+  <div id="groundnav">
+    <center>
+      <a href="../usa/usaair.html"><img id="groundnav" src="../airnav/usaair.png"></a>
+      <a href="../ussr/ussrair.html"><img id="groundnav" src="../airnav/ussrair.png"></a>
+      <a href="../germany/germanyair.html"><img id="groundnav" src="../airnav/germanyair.png"></a>
+      <a href="../british/britainair.html"><img id="groundnav" src="../airnav/britainair.png"></a>
+      <a href="../japan/japanair.html"><img id="groundnav" src="../airnav/japanair.png"></a>
+      <a href="../italy/italyair.html"><img id="groundnav" src="../airnav/italyair.png"></a>
+      <a href="../france/franceair.html"><img id="groundnav" src="../airnav/franceair.png"></a>
+  </div>
+ <br>
+ <br><br><br>
+ <h2>------- USSR Tree -------</h2><br><br>
+ <center>
+   <div id="gamemode1">
+    <button id="gamemode1" class="ab" onclick="
+      
+    ">AB</button>
+    <button id="gamemode1" class="rb" onclick=" 
+      
+    ">RB</button>
+    <button id="gamemode1" class="sb" onclick="
+      
+    ">SB</button>
+   </div>
+ </center>
+    <br><br>
+ <hr> 
+ <br><br>
+
+ <table id="tree">
+   <tr>
+     <td rowspan="5" class="tier">l</td>
+     <td><button id="logoaa1" onclick= " location.href = '#aa1' " class="tank">Yak-1<br>2.3</button></td>
+     <td>
+      <div id="show-5">
+        <button id="logo" onclick= " location.href = '#' " class="tank">I-15<br>1.3</button>
+      <div id="hide-5">
+        <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">I-15 WR<br>Reserve</button><br><br>
+        <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">I-15 M-22<br>Reserve</button><br><br>
+        <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">I-15R<br>Reserve</button><br><br>
+        <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">I-15bis<br>1.3</button><br><br>
+        <button id="logopz2f" onclick= " location.href = '#pz2f' " class="tank">I-153 M-62<br>2.0</button>
+      </div>
+      </div>
+     </td>
+     <td><button id="logoaa1" onclick= " location.href = '#aa1' " class="tank">LaGG-3-8<br>2.0</button></td>
+     <td><button id="logoaa1" onclick= " location.href = '#aa1' " class="tank">Po-2<br>1.0</button></td>
+     <td>
+      <div id="show-6">
+        <button id="logo" onclick= " location.href = '#' " class="tank">SB<br>2.0</button>
+      <div id="hide-6">
+        <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">SB 2M-100<br>1.7</button><br><br>
+        <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">SB 2M-103<br>2.0</button><br><br>
+        <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">SB 2M-103U MV-3<br>2.3</button><br><br>
+        <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">SB 2M-105<br>2.7</button><br><br>
+        <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">SB 2M-103U<br>2.3</button><br><br>
+        <button id="logopz2f" onclick= " location.href = '#pz2f' " class="tank">SB 2M-103 MV-3<br>2.3</button>
+      </div>
+      </div>
+     </td>
+     <td><button id="logopz2cdak" onclick= " location.href = '#pz2cdak' " class="tank2">I-153-M62<br>250 <img id="goldicon1" src="../../image/gold.svg"> &nbsp; 2.0</button></td>
+     <td><button id="logosd.kfz.140/1" onclick= " location.href = '#sd.kfz.140/1' " class="tank2"><div style="font-size:8pt;">Hampden TB Mk I</div>1,370 <img id="goldicon1" src="../../image/gold.svg"> &nbsp; 1.7</button></td>
+   </tr>
+   <tr>
+     <td></td>
+     <td>
+      <div id="show-4">
+        <button id="logo" onclick= " location.href = '#' " class="tank">I-16<br>1.3</button>
+      <div id="hide-4">
+        <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">I-16 type 5<br>1.3</button><br><br>
+        <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">I-16 type 10<br>1.7</button><br><br>
+        <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">I-16 type 18<br>2.0</button><br><br>
+        <button id="logopz2f" onclick= " location.href = '#pz2f' " class="tank">I-16 type 24<br>2.3</button>
+      </div>
+      </div>
+     </td>
+     <td><button id="logopz4c" onclick= " location.href = '#pz4c' " class="tank">LaGG-3-11<br>2.0</button></td>
+     <td>
+      <div id="show-4">
+        <button id="logo" onclick= " location.href = '#' " class="tank">Su-2<br>1.3</button>
+      <div id="hide-4">
+        <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">BB-1<br>1.3</button><br><br>
+        <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">Su-2 MV-5<br>1.7</button><br><br>
+        <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">Su-2 TSS-1<br>2.0</button><br><br>
+        <button id="logopz2f" onclick= " location.href = '#pz2f' " class="tank">Su-2 (M-82)<br>2.7</button>
+      </div>
+      </div>
+     </td>
+     <td><button id="logopz4c" onclick= " location.href = '#pz4c' " class="tank">Ar-2<br>2.3</button></td>
+     <td><button id="logo" onclick= " location.href = '#' " class="tank2">MBR-2-M-34<br>1.0</button></td>
+     <td><button id="logoNb.Fz" onclick= " location.href = '#Nb.Fz' " class="tank2">PBY-5a Catalina<br>880 <img id="goldicon1" src="../../image/gold.svg">&nbsp; 1.7</button></td>
+   </tr>
+   <tr>
+     <td></td>
+     <td></td>
+     <td></td>
+     <td><button id="logostug3a" onclick= " location.href = '#stug3a' " class="tank">Yak-2 KABB<br>2.3</button></td>
+     <td><button id="logopz4e" onclick= " location.href = '#pz4e' " class="tank">Yak-4<br>2.3</button></td>
+     <td><button id="logo" onclick= " location.href = '#' " class="tank2">LaGG-3-23<br>2.3</button></td>
+     <td><button id="logo" onclick= " location.href = '#' " class="tank2">TB-3M-17-32<br>1.3</button></td>
+   </tr>
+   <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><button id="logo" onclick= " location.href = '#' " class="tank2">LaGG-3-4<br>2.3</button></td>
+    <td><button id="logo" onclick= " location.href = '#' " class="tank2">I-301<br>2.7</button></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><button id="logo" onclick= " location.href = '#' " class="tank2">Tandem MAI<br>2.0</button></td>
+    <td><button id="logo" onclick= " location.href = '#' " class="tank2">I-29<br>2.7</button></td>
+  </tr>
+ </table><br>
+<hr>
+<br><table id="tree">
+  <tr>
+    <td rowspan="3" class="tier">ll</td>
+    <td><button id="logoSd.Kfz.234/2" onclick= " location.href = '#Sd.Kfz.234/2' " class="tank">Yak-7B<br>2.3</button></td>
+    <td>
+      <div id="show">
+        <button id="logo" onclick= " location.href = '#' " class="tank">MiG-3<br>1.7 - 2.3</button>
+      <div id="hide">
+        <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">MiG-3-15<br>1.7</button><br><br>
+        <button id="logopz2f" onclick= " location.href = '#pz2f' " class="tank">MiG-3-15 (BK)<br>2.3</button>
+      </div>
+      </div>
+    </td>
+    <td><button id="logopz4f1" onclick= " location.href = '#pz4f1' " class="tank">LaGG-3-35<br>2.3</button></td>
+    <td><button id="logoaa3" onclick= " location.href = '#aa3' " class="tank">IL-2 (1941)<br>2.3</button></td>
+    <td><button id="logostuh" onclick= " location.href = '#stuh' " class="tank">DB-3B<br>2.7</button></td>
+    <td><button id="logopz3n" onclick= " location.href = '#pz3n' " class="tank2">LaGG-3-34<br>&nbsp; 2.3</button></td>
+    <td><button id="logopz2h" onclick= " location.href = '#pz2h' " class="tank2">Hurricane Mk IIB<br>700 <img id="goldicon1" src="../../image/gold.svg"> &nbsp; 3.0</button></td>
+  </tr>
+  <tr>
+    <td><button id="logoSd.Kfz.234/2" onclick= " location.href = '#Sd.Kfz.234/2' " class="tank">Yak-1B<br>3.0</button></td>
+    <td><button id="logopz3j1" onclick= " location.href = '#pz3j1' " class="tank">MiG-3-34<br>2.3</button></td>
+    <td><button id="logopz4f1" onclick= " location.href = '#pz4f1' " class="tank">LaGG-3-66<br>2.7</button></td>
+    <td><button id="logoaa3" onclick= " location.href = '#aa3' " class="tank">IL-2 (1942)<br>3.0</button></td>
+    <td><button id="logostuh" onclick= " location.href = '#stuh' " class="tank">IL-4<br>3.0</button></td>
+    <td><button id="logopz3n" onclick= " location.href = '#pz3n' " class="tank2">I-153P<br>950 <img id="goldicon1" src="../../image/gold.svg"> &nbsp; 2.7</button></td>
+    <td><button id="logopz2h" onclick= " location.href = '#pz2h' " class="tank2">P-40E-1<br>700 <img id="goldicon1" src="../../image/gold.svg"> &nbsp; </button></td>
+  </tr>
+  <tr>
+    <td>
+      <div id="show">
+        <button id="logo" onclick= " location.href = '#' " class="tank">Yak-9<br>3.0</button>
+      <div id="hide">
+        <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">Yak-9<br>3.0</button><br><br>
+        <button id="logopz2f" onclick= " location.href = '#pz2f' " class="tank">Yak-9B<br>3.0</button>
+      </div>
+      </div>
+    </td>
+    <td><button id="logopz3j1" onclick= " location.href = '#pz3j1' " class="tank">I-16 type 27<br>2.7</button></td>
+    <td><button id="logopz4f1" onclick= " location.href = '#pz4f1' " class="tank">La-5<br>3.0</button></td>
+    <td><button id="logoaa3" onclick= " location.href = '#aa3' " class="tank">Pe-3 (e)<br>2.3</button></td>
+    <td>
+      <div id="show-3">
+        <button id="logo" onclick= " location.href = '#' " class="tank">Pe-2 (e)<br>3.7</button>
+      <div id="hide-3">
+        <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">Pe-2-1<br>3.7</button><br><br>
+        <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">Pe-2-31<br>3.7</button><br><br>
+        <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">Pe-2-83<br>4.0</button>
+      </div>
+      </div>
+    </td>
+    <td><button id="logopz3n" onclick= " location.href = '#pz3n' " class="tank2">I-16 type 28<br>1,350 <img id="goldicon1" src="../../image/gold.svg"> &nbsp; 2.7</button></td>
+    <td><button id="logopz2h" onclick= " location.href = '#pz2h' " class="tank2">P-39K-1<br>1,000 <img id="goldicon1" src="../../image/gold.svg"> &nbsp; 3.0</button></td>
+  </tr>
+  
+</table><br>
+<hr>
+<br><table id="tree">
+  <tr>
+    <td rowspan="5" class="tier">lll</td>
+    <td><button id="logodm" onclick= " location.href = '#dm' " class="tank">Yak-9T<br>4.0</button></td>
+    <td><button id="logotigerh1" onclick= " location.href = '#tigerh1' " class="tank">I-185 (M-82)<br>3.7</button></td>
+    <td><button id="logopz4g" onclick= " location.href = '#pz4g' " class="tank">La-5F<br>3.3</button></td>
+    <td>
+      <div id="show">
+        <button id="logo" onclick= " location.href = '#' " class="tank">Pe-3<br>2.7 - 3.3</button>
+      <div id="hide">
+        <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">Pe-3<br>2.7</button><br><br>
+        <button id="logopz2f" onclick= " location.href = '#pz2f' " class="tank">Pe-3bis<br>3.3</button>
+      </div>
+      </div>
+    </td>
+    <td>
+      <div id="show-4">
+        <button id="logo" onclick= " location.href = '#' " class="tank">Yer-2<br>4.0</button>
+      <div id="hide-4">
+        <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">Yer-2 (M-105)<br>4.0</button><br><br>
+        <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">Yer-2 (M-105R) LU<br>4.0</button><br><br>
+        <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">Yer-2 (M-105) TAT<br>4.0</button><br><br>
+        <button id="logopz2f" onclick= " location.href = '#pz2f' " class="tank">Yer-2 (M-105R) TAT<br>4.0</button>
+      </div>
+      </div>
+    </td>
+    <td><button  onclick= " location.href = '#pz.bfw.4' " class="tank2">IL-2M "Avenger"<br>3.3</span></button></td>
+    <td><button id="logo" onclick= " location.href = '#' " class="tank2">B-25J-30<br>1,450 <img id="goldicon1" src="../../image/gold.svg"> &nbsp; 4.3</button></td>
+  </tr>
+  <tr>
+    <td><button id="logodm" onclick= " location.href = '#dm' " class="tank">Yak-9K<br>4.0</button></td>
+    <td></td>
+    <td><button id="logopz4g" onclick= " location.href = '#pz4g' " class="tank">La-5FN<br>3.7</button></td>
+    <td>
+      <div id="show">
+        <button id="logo" onclick= " location.href = '#' " class="tank">IL-2M<br>3.3</button>
+      <div id="hide">
+        <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">IL-2-37<br>3.3</button><br><br>
+        <button id="logopz2f" onclick= " location.href = '#pz2f' " class="tank">IL-2M (1943)<br>3.3</button>
+      </div>
+      </div>
+    </td>
+    <td><button id="logojp38" onclick= " location.href = '#jp38' " class="tank">Pe-8<br>4.3</button></td>
+    <td><button  onclick= " location.href = '#pz.bfw.4' " class="tank2">Golovachev's Yak-9M950<br>>3.0</span></button></td>
+    <td><button id="logo" onclick= " location.href = '#' " class="tank2">P-63A-10<br>1,600 <img id="goldicon1" src="../../image/gold.svg"> &nbsp; 3.7</button></td>
+  </tr>
+  <tr>
+    <td>
+      <div id="show">
+        <button id="logo" onclick= " location.href = '#' " class="tank">Yak-3<br>4.0 - 5.0</button>
+      <div id="hide">
+        <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">Yak-3<br>4.0</button><br><br>
+        <button id="logopz2f" onclick= " location.href = '#pz2f' " class="tank">Yak-3P<br>5.0</button>
+      </div>
+      </div>
+    </td>
+    <td></td>
+    <td></td>
+    <td><button id="logowirbe" onclick= " location.href = '#wirbe' " class="tank">IL-2M type 3<br>3.3</button></td>
+    <td>
+      <div id="show">
+        <button id="logo" onclick= " location.href = '#' " class="tank">Pe-2 (I)<br>4.3 -4.7</button>
+      <div id="hide">
+        <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">Pe-2-110<br>4.3</button><br><br>
+        <button id="logopz2f" onclick= " location.href = '#pz2f' " class="tank">Pe-2-359<br>4.7</button>
+      </div>
+      </div>
+    </td>
+    <td><button  onclick= " location.href = '#pz.bfw.4' " class="tank2">Pe-2-205<br>4.0</span></button></td>
+    <td><button id="logo" onclick= " location.href = '#' " class="tank2"><div style="font-size:8pt;">Pokryshkin P-39N</div> &nbsp; 3.0</button></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><button id="logowirbe" onclick= " location.href = '#wirbe' " class="tank">Tu-2<br>4.0</button></td>
+    <td><button id="logo" onclick= " location.href = '#' " class="tank2">P-39Q-15<br>3.7</button></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><button id="logo" onclick= " location.href = '#' " class="tank2">Yak-3T<br>5.0</button></td>
+    <td><button id="logo" onclick= " location.href = '#' " class="tank2">P-47D-27<br>1,900 <img id="goldicon1" src="../../image/gold.svg">&nbsp; 4.3</button></td>
+  </tr>
+</table><br>
+<hr>
+<br><table id="tree">
+    <tr>
+      <td rowspan="4" class="tier">IV</td>
+      <td><button id="logojpz" onclick= " location.href = '#jpz' " class="tank">Yak-9U<br>4.3</button></td>
+      <td><button id="logotiger2105" onclick= " location.href = '#tiger2105' " class="tank">I-185 (M-82)<br>5.0</button></td>
+      <td><button id="logoleo" onclick= " location.href = '#leo' " class="tank">La-7<br>4.7</button></td>
+      <td><button id="logoaa4" onclick= " location.href = '#aa4' " class="tank">Su-6 (AM-42)<br>5.0</button></td>
+      <td>
+          <div id="show">
+              <button id="logo" onclick= " location.href = '#' " class="tank">Yer-2<br>4.7</button>
+            <div id="hide">
+              <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">Yer-2 (ACh-30B) (e)<br>4.7</button><br><br>
+              <button id="logopz2f" onclick= " location.href = '#pz2f' " class="tank">Yer-2 (ACh-30B) (l)<br>4.7</button>
+            </div>
+            </div>
+      </td>
+      <td><button id="logom47" onclick= " location.href = '#88' " class="tank2">Dolgushin's La-7<br>4.7</button></td>
+      <td><button id="logo88" onclick= " location.href = '#88' " class="tank2">P-63C-5<br>Pack &nbsp; 4.0</button></td>
+    </tr>
+    <tr>
+      <td><button id="logoSd.Kfz.234/2" onclick= " location.href = '#Sd.Kfz.234/2' " class="tank">Yak-9P<br>5.0</button></td>
+      <td><button id="logopz3j1" onclick= " location.href = '#pz3j1' " class="tank">I-225<br>6.3</button></td>
+      <td><button id="logopz4f1" onclick= " location.href = '#pz4f1' " class="tank">La-7B-20<br>5.0</button></td>
+      <td><button id="logoaa3" onclick= " location.href = '#aa3' " class="tank">IL-10 <br>5.3</button></td>
+      <td><button id="logostuh" onclick= " location.href = '#stuh' " class="tank">Tu-2S<br>5.7</button></td>
+      <td><button id="logopz3n" onclick= " location.href = '#pz3n' " class="tank2">La-11<br>&nbsp; 5.3</button></td>
+      <td><button id="logopz2h" onclick= " location.href = '#pz2h' " class="tank2">P-63A-10<br>4.0</button></td>
+    </tr>
+    <tr>
+        <td><button id="logoSd.Kfz.234/2" onclick= " location.href = '#Sd.Kfz.234/2' " class="tank">Yak-9UT<br>5.7</button></td>
+        <td></td>
+        <td><button id="logopz4f1" onclick= " location.href = '#pz4f1' " class="tank">La-9<br>6.0</button></td>
+        <td><button id="logoaa3" onclick= " location.href = '#aa3' " class="tank">IL-10 (1946)<br>5.3</button></td>
+        <td>
+            <div id="show">
+                <button id="logo" onclick= " location.href = '#' " class="tank">Tu-2<br>6.3</button>
+              <div id="hide">
+                <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">Tu-2S-44<br>6.3</button><br><br>
+                <button id="logopz2f" onclick= " location.href = '#pz2f' " class="tank">Tu-2S-59<br>6.3</button>
+              </div>
+              </div>
+        </td>
+        <td><button id="logopz3n" onclick= " location.href = '#pz3n' " class="tank2">Yak-3 (VK-107)<br>&nbsp; 5.7</button></td>
+        <td><button id="logopz2h" onclick= " location.href = '#pz2h' " class="tank2">Spitfire Mk IXc<br>Pack&nbsp; 5.7</button></td>
+    </tr>
+    <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><button id="logoaa3" onclick= " location.href = '#aa3' " class="tank">Su-6 (M-71F)<br>5.3</button></td>
+          <td><button id="logostuh" onclick= " location.href = '#stuh' " class="tank">Tu-4<br>8.0</button></td>
+          <td><button id="logopz3n" onclick= " location.href = '#pz3n' " class="tank2">Be-6<br>3,850 <img id="goldicon1" src="../../image/gold.svg"> &nbsp; 5.0</button></td>
+          <td><button id="logopz2h" onclick= " location.href = '#pz2h' " class="tank2">Fw 190 D-9<br>7,420 <img id="goldicon1" src="../../image/gold.svg"> &nbsp; 5.3</button></td>
+    </tr>
+</table><br>
+<hr>
+<br><table id="tree">
+    <tr>
+      <td rowspan="3" class="tier">V</td>
+      <td>
+        <div id="show-3">
+          <button id="logo" onclick= " location.href = '#' " class="tank">Yak-15<br>6.3 -6.7</button>
+        <div id="hide-3">
+          <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">Yak-15<br>6.7</button><br><br>
+          <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">Yak-15P<br>6.3</button><br><br>
+          <button id="logopz2f" onclick= " location.href = '#pz2f' " class="tank">Yak-17<br>6.7</button>
+        </div>
+        </div>
+      </td>
+      <td>
+        <div id="show">
+          <button id="logo" onclick= " location.href = '#' " class="tank">MiG-9<br>7.3</button>
+        <div id="hide">
+          <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">MiG-9<br>7.3</button><br><br>
+          <button id="logopz2f" onclick= " location.href = '#pz2f' " class="tank">MiG-9 (I)<br>7.3</button>
+        </div>
+        </div>
+      </td>
+      <td><button id="logoleo" onclick= " location.href = '#leo' " class="tank">La-15<br>8.0</button></td>
+      <td><button id="logoaa4" onclick= " location.href = '#aa4' " class="tank">IL-28<br>8.0</button></td>
+      <td><button id="logojt" onclick= " location.href = '#jt' " class="tank">Tu-14T<br>8.0</button></td>
+      <td><button id="logojt" onclick= " location.href = '#jt' " class="tank">La-174<br>8.0</button></td>
+      <td><button id="logo" class="empty-cells"></button></td>
+    </tr>
+    <tr>
+      <td><button id="logorak" onclick= " location.href = '#rak' " class="tank">Yak-23<br>8.0</button></td>
+      <td>
+        <div id="show">
+          <button id="logo" onclick= " location.href = '#' " class="tank">MiG-15<br>9.0</button>
+        <div id="hide">
+          <button id="logopz2c" onclick= " location.href = '#pz2c' " class="tank">MiG-15<br>9.0</button><br><br>
+          <button id="logopz2f" onclick= " location.href = '#pz2f' " class="tank">MiG-15bis (I)<br>9.0</button>
+        </div>
+        </div>
+      </td>
+      <td><button id="logom48" onclick= " location.href = '#m48' " class="tank">La-200<br>8.0</button></td>
+      <td><button id="logojt" onclick= " location.href = '#jt' " class="tank">IL-28Sh<br>8.0</button></td>
+      <td></td>
+      <td><button id="logopz2h" onclick= " location.href = '#pz2h' " class="tank2">MiG-15bis ISH<br>Pack&nbsp; 9.0</button></td>
+      <td></td>
+    </tr>
+    <tr>
+        <td><button id="logorak" onclick= " location.href = '#rak' " class="tank">Yak-30<br>8.0</button></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+  </table><br>
+  <hr>
+  <br><table id="tree">
+    <tr>
+      <td rowspan="2" class="tier">Vl</td>
+      <td></td>
+      <td><button id="logoleo2k" onclick= " location.href = '#leo2k' " class="tank">MiG-17<br>9.0</button></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><button id="logo" class="empty-cells"></button></td>
+      <td><button id="logoleo2k" onclick= " location.href = '#leo2k' " class="tank">MiG-19PT<br>10.0</button></td>
+      <td><button id="logo" class="empty-cells"></button></td>
+      <td><button id="logo" class="empty-cells"></button></td>
+      <td><button id="logo" class="empty-cells"></button></td>
+      <td><button id="logo" class="empty-cells"></button></td>
+      <td><button id="logo" class="empty-cells"></button></td>
+    </tr>
+  </table><br>
+
+ <br><br><br><br>
+    <hr id="footerline">
+    <br><br><br><br>
+      <center>
+        <div id="footlogo">
+            <img id="footerogo" width="" height="30px" src="../../footer/gaijin.svg">
+            <img id="footerogo" width="" height="20px" src="../../footer/ps4.svg">
+            <img id="footerogo" width="" height="20px" src="../../footer/xbox.svg">
+            <img id="footerogo" width="" height="20px" src="../../footer/windows.svg">
+            <img id="footerogo" width="" height="20px" src="../../footer/steam.svg">
+            <img id="footerogo" width="" height="30px" src="../../footer/mac.svg">
+            <img id="footerogo" width="" height="30px" src="../../footer/oculus.svg">
+            <img id="footerogo" width="" height="30px" src="../../footer/vive.svg">
+        </div>
+    <br>
+    <p id="footer">
+    DEPICTION OF ANY REAL-WORLD WEAPON OR VEHICLE IN THIS GAME DOES NOT MEAN PARTICIPATION IN GAME DEVELOPMENT, SPONSORSHIP OR ENDORSEMENT BY ANY WEAPON OR VEHICLE MANUFACTURER.<br><br>
+    © 2009—2019 by Gaijin Network Ltd. Gaijin and War Thunder are trademarks and/or registered trademarks of Gaijin Network Ltd. or its licensors, all other logos are trademarks of their respective owners. F-84 Thunderjet, XF5F-1 Skyrocket,<br>
+    XP-50, F4F-3 Wildcat, F4F-4 Wildcat, F4U-1A Corsair, F4U-1B Corsair, F4U-1C Corsair, F6F-3 Hellcat, F7F-1 Tigercat, F8F-1 Bearcat, F8F-1B Bearcat, F9F-2 Panther, F9F-5 Panther, OS2U-1 Kingfisher, OS2U-3 Kingfisher, F3F, P-61 Black Widow<br>
+    ,P-47D-25 Thunderbolt, P-47D-27 Thunderbolt, P-47M-1-RE Thunderbolt, P-47N-15 Thunderbolt and P-47D-28 Thunderbolt are trademarks of Northrop Grumman Systems Corporation and are used under license to Gaijin Network Ltd.CONSOLIDATED B-24<br>
+    LIBERATOR, CONSOLIDATED PBY CATALINA, LOCKHEED P-38 LIGHTNING , LOCKHEED F-80 SHOOTING STAR, MARTIN B-57 CANBERRA, associated emblems and logos, and body designs of vehicles are either registered trademarks or trademarks of Lockheed Martin<br>
+    Corporation in the USA and/or other jurisdictions, used under license by Gaijin Network Ltd. P-39 and P-63 emblems, logos, and body designs are trademarks of Textron Innovations Inc. and are used under license by Gaijin Network Ltd.
+    <br><br>
+    Privacy Policy    Terms of Use    EULA Customer Support    Site rules    Game rule
+    </p>
+
+
+  </body>
+</html>
